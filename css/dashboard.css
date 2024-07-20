@@ -276,7 +276,7 @@ header .btn-new-inspection {
   grid-template-columns: 2fr 1fr;
   gap: 20px;
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .cards {
@@ -610,6 +610,7 @@ td {
     height: 10rem;
   }
 }
+
 /* @media screen and (max-width: 880px) {
   .cards {
     grid-template-columns: 1fr;
@@ -707,7 +708,7 @@ td {
     width: 10%;
   }
   .logo-container {
-    width: 15%;
+    width: 20%;
   }
 
   .requests-grey {
@@ -737,5 +738,9 @@ td {
 
   #main .shifted {
     margin-left: 0;
+  }
+
+  img#canc {
+    margin-top: -15px;
   }
 }
