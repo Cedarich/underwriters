@@ -23,69 +23,67 @@
     <div class="container">
       <!-- Aside section holding navbar of icon -->
 
-      <div id="sidebarParent">
-        <aside class="sidebar" id="sidebar">
-          <nav>
-            <ul>
-              <li>
-                <a href="dashboard.html"
-                  ><img src="images/icon1.png" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="dashboard.html" class="active">
-                  <img src="images/icon2.png" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="report.html"><img src="images/icon3.png" alt="" /> </a>
-              </li>
-              <li>
-                <a href="details.html"><img src="images/icon4.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="createnewinspection.html"
-                  ><img src="images/icon5.png" alt=""
-                /></a>
-              </li>
-              <li>
-                <a href="inspectionlist.html"
-                  ><img src="images/icon6.png" alt=""
-                /></a>
-              </li>
-            </ul>
-          </nav>
-        </aside>
+      <aside class="sidebar" id="sidebar">
+        <nav>
+          <ul>
+            <li>
+              <a href="dashboard.html"
+                ><img src="images/icon1.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="dashboard.html" class="active">
+                <img src="images/icon2.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="report.html"><img src="images/icon3.png" alt="" /> </a>
+            </li>
+            <li>
+              <a href="details.html"><img src="images/icon4.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="createnewinspection.html"
+                ><img src="images/icon5.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="inspectionlist.html"
+                ><img src="images/icon6.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
 
-        <!-- Container holding logo request and overview -->
+      <!-- Container holding logo request and overview -->
 
-        <div class="logo-container" id="logoContainer">
-          <div class="logo">
-            <img src="images/alt.png" alt="Leadway Assurance" />
-          </div>
-
-          <h3 class="trm">TRM</h3>
-          <nav>
-            <ul>
-              <li>
-                <div class="overview">
-                  <img src="images/over.png" alt="" /><a href="dashboard.html"
-                    >Overview</a
-                  >
-                </div>
-              </li>
-              <div class="request-grey">
-                <li>
-                  <img src="images/req.png" alt="" /><a
-                    href="inspectionlist.html"
-                    >Requests</a
-                  >
-                </li>
-              </div>
-            </ul>
-          </nav>
+      <div class="logo-container" id="logoContainer">
+        <div class="logo">
+          <img src="images/alt.png" alt="Leadway Assurance" />
         </div>
+
+        <h3 class="trm">TRM</h3>
+        <nav>
+          <ul>
+            <li>
+              <div class="overview">
+                <img src="images/over.png" alt="" /><a href="dashboard.html"
+                  >Overview</a
+                >
+              </div>
+            </li>
+            <div class="request-grey">
+              <li>
+                <img src="images/req.png" alt="" /><a href="inspectionlist.html"
+                  >Requests</a
+                >
+              </li>
+            </div>
+          </ul>
+        </nav>
       </div>
+
       <!-- Main content -->
 
       <main id="main">
@@ -349,12 +347,11 @@
           successModal.style.display = "none";
         }
       };
-      // Hambuger functionality
-
+      // hamburgerMenu
       var hamburger = document.getElementById("ham");
       var cancel = document.getElementById("canc");
       var sidebar = document.getElementById("sidebar");
-      var sidebarParent = document.getElementById("sidebar-parent");
+      var logoContainer = document.getElementById("logoContainer");
 
       document.addEventListener("DOMContentLoaded", function () {
         //   var hamburger = document.getElementById("hamburger");
@@ -366,10 +363,10 @@
           hamburger.classList.toggle("open");
           if (hamburger.classList.contains("open")) {
             cancel.style.display = "block";
-            cancel.style.marginLeft = "180px";
+            cancel.style.marginLeft = "50px";
             hamburger.style.display = "none";
-            logoContainer.style.display = "block";
-            main.style.marginLeft = "278px";
+            logoContainer.style.display = "none";
+            main.style.marginLeft = "0";
           }
         });
 
@@ -397,10 +394,6 @@
           sidebarParent.style.display = "none";
         }
       });
-
-      // document.getElementById("myBtn1").onclick = function () {
-      //   window.location.href = "createnewinspection.html";
-      // };
     </script>
     <!-- <script src="js/pre-loss.js"></script> -->
   </body>

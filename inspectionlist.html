@@ -23,7 +23,7 @@
   <body>
     <div class="container">
       <!-- Aside section holding navbar of icon -->
-      <div id="sidebarParent">
+      
       <aside class="sidebar" id="sidebar">
         <nav class="">
           <ul>
@@ -85,7 +85,7 @@
           </ul>
         </nav>
       </div>
-    </div>
+  
 
       <!-- Main content -->
 
@@ -280,54 +280,53 @@
       window.location.href = "createnewinspection.html";
     };
     
-    // Hambuger functionality
-    
-    var hamburger = document.getElementById("ham");
-    var cancel = document.getElementById("canc");
-    var sidebar = document.getElementById("sidebar");
-    var sidebarParent = document.getElementById("sidebar-parent");
-    
-    document.addEventListener("DOMContentLoaded", function () {
-      //   var hamburger = document.getElementById("hamburger");
+   // hamburgerMenu
+   var hamburger = document.getElementById("ham");
+      var cancel = document.getElementById("canc");
+      var sidebar = document.getElementById("sidebar");
       var logoContainer = document.getElementById("logoContainer");
-      var main = document.getElementById("main");
-    
-      hamburger.addEventListener("click", function () {
-        sidebar.style.display = "flex";
-        hamburger.classList.toggle("open");
-        if (hamburger.classList.contains("open")) {
-          cancel.style.display = "block";
-          cancel.style.marginLeft = "180px";
+
+      document.addEventListener("DOMContentLoaded", function () {
+        //   var hamburger = document.getElementById("hamburger");
+        var logoContainer = document.getElementById("logoContainer");
+        var main = document.getElementById("main");
+
+        hamburger.addEventListener("click", function () {
+          sidebar.style.display = "flex";
+          hamburger.classList.toggle("open");
+          if (hamburger.classList.contains("open")) {
+            cancel.style.display = "block";
+            cancel.style.marginLeft = "50px";
+            hamburger.style.display = "none";
+            logoContainer.style.display = "none";
+            main.style.marginLeft = "0";
+          }
+        });
+
+        canc.addEventListener("click", function () {
+          sidebar.style.display = "none";
+          hamburger.classList.toggle("open");
+          if (!hamburger.classList.contains("open")) {
+            cancel.style.display = "none";
+            cancel.style.marginLeft = "0";
+            hamburger.style.display = "block";
+            logoContainer.style.display = "none";
+            main.style.marginLeft = "0";
+          }
+        });
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth > 835) {
           hamburger.style.display = "none";
-          logoContainer.style.display = "block";
-          main.style.marginLeft = "278px";
-        }
-      });
-    
-      canc.addEventListener("click", function () {
-        sidebar.style.display = "none";
-        hamburger.classList.toggle("open");
-        if (!hamburger.classList.contains("open")) {
-          cancel.style.display = "none";
-          cancel.style.marginLeft = "0";
+          cancel.style.display = "block";
+          sidebarParent.style.display = "block";
+        } else {
           hamburger.style.display = "block";
-          logoContainer.style.display = "none";
-          main.style.marginLeft = "0";
+          cancel.style.display = "none";
+          sidebarParent.style.display = "none";
         }
       });
-    });
-    
-    window.addEventListener("resize", () => {
-      if (window.innerWidth > 835) {
-        hamburger.style.display = "none";
-        cancel.style.display = "block";
-        sidebarParent.style.display = "block";
-      } else {
-        hamburger.style.display = "block";
-        cancel.style.display = "none";
-        sidebarParent.style.display = "none";
-      }
-    });
     </script>
 
     <!-- <script src="js/inspection.js"></script> -->

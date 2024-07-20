@@ -601,6 +601,9 @@ header p {
 }
 
 @media screen and (max-width: 522px) {
+  .logo-container {
+    display: none;
+  }
   .policy-details {
     display: flex;
     flex-direction: column;

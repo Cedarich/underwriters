@@ -247,7 +247,7 @@ header .btn-new-inspection {
 
 .request-grey {
   display: flex;
-  padding: 10px;
+  /* padding: 10px; */
 
   justify-content: left;
   align-items: center;
@@ -673,5 +673,17 @@ td {
     border: none;
     position: fixed;
     margin-bottom: 20px;
+  }
+
+  .logo-container {
+    width: 20%;
+  }
+
+  .requests-grey {
+    padding: 0px;
+  }
+  .logo img {
+    width: 90px;
+    height: 33px;
   }
 }
