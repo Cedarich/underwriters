@@ -184,7 +184,8 @@ header .btn-new-inspection {
   min-height: 1216px;
   height: 100%;
   border-right: 1.2px solid #eeeeee;
-  background-color: #ffffff;
+  background-color: #fffbf6;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -195,7 +196,6 @@ header .btn-new-inspection {
   display: flex;
   width: 166px;
   height: 52px;
-  margin-top: 77px; /*I might comeback to adjust */
 }
 
 .trm {
@@ -335,7 +335,7 @@ header .btn-new-inspection {
   align-items: center;
 
   margin-top: 5px;
-  background-color: #ffffff;
+  background-color: #fffbf6;
   border: 1px solid #eeeeee;
 }
 .search-sort input {
@@ -380,7 +380,7 @@ header .btn-new-inspection {
   border-radius: 5px;
   border: 1px solid #eeeeee;
   padding: 10px;
-  background-color: #ffffff;
+  background-color: #fffbf6;
   cursor: pointer;
   font-size: 12px;
   font-weight: 400;
@@ -410,6 +410,9 @@ table {
   width: 100%;
 }
 
+.search input {
+  background-color: #fffbf6;
+}
 th {
   justify-content: center;
   align-items: center;

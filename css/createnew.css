@@ -168,7 +168,7 @@ header p {
   min-height: 1216px;
   height: 100%;
   border-right: 1.2px solid #eeeeee;
-  background-color: #ffffff;
+  background-color: #fffbf6;
   position: fixed;
   top: 0;
   left: 0;
@@ -179,7 +179,6 @@ header p {
   display: flex;
   width: 166px;
   height: 52px;
-  margin-top: 77px; /*I might comeback to adjust */
 }
 
 .trm {
@@ -495,12 +494,11 @@ a {
   .top-content {
     border: none;
     position: fixed;
-    /* padding: 10px; */
+    margin-top: 13px;
   }
 
   .top-content img {
     width: 1rem;
-    height: 0.4rem;
   }
   .inspection-options .option pre-los img .option post-loss img {
     width: 1.6rem;
