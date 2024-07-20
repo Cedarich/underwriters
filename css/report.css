@@ -617,4 +617,9 @@ header p {
   .policy-progress {
     border: none;
   }
+
+  .top-content {
+    border: none;
+    position: fixed;
+  }
 }

@@ -681,4 +681,8 @@ hr {
   header p {
     white-space: nowrap;
   }
+  .top-content {
+    border: none;
+    position: fixed;
+  }
 }

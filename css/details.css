@@ -653,6 +653,11 @@ Media query for smaller screen */
   .icon-dot {
     display: none;
   }
+
+  .top-content {
+    border: none;
+    position: fixed;
+  }
 }
 
 @media screen and (max-width: 782px) {
