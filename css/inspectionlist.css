@@ -106,6 +106,7 @@ main {
   display: flex;
   border: none;
   outline: none;
+  background-color: #ffffff;
 }
 
 .notifiction {
@@ -498,6 +499,11 @@ tr {
   .logo-container {
     display: none;
   }
+
+  .top-content {
+    border: none;
+    position: fixed;
+  }
 }
 @media screen and (max-width: 666px) {
   .marine {
@@ -512,11 +518,11 @@ tr {
     gap: 0px;
     justify-content: center;
     align-items: center;
+
     /* white-space: nowrap; */
   }
 
   header .btn-new-inspection {
-    display: none;
     padding: 0px;
     height: 40px;
     white-space: nowrap;

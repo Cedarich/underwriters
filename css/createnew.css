@@ -104,7 +104,7 @@ body {
 
 .top-content select {
   display: flex;
-
+  background-color: #ffff;
   border: none;
   outline: none;
 }
@@ -465,10 +465,31 @@ a {
 
 @media screen and (max-width: 800px) {
   .inspection-options {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
   }
   .selection {
     width: 20rem;
+  }
+
+  .top-content {
+    border: none;
+    position: fixed;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    display: flex;
+    justify-content: right;
+    height: 100%;
+    width: 100%;
+  }
+
+  .top-content {
+    border: none;
+    position: fixed;
   }
 }

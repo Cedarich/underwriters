@@ -104,7 +104,7 @@ main {
 
 .top-content select {
   display: flex;
-
+  background-color: #ffffff;
   border: none;
   outline: none;
 }
@@ -631,10 +631,14 @@ td {
     width: 30px;
     height: 30px;
   }
-  }
+
   .sidebar,
   .logo-container {
     display: none;
+  }
+  .top-content {
+    position: fixed;
+    border: none;
   }
 }
 
@@ -655,5 +659,13 @@ td {
     /* margin-left: 80px; */
     align-items: center;
     justify-content: center;
+  }
+
+  .top-content {
+    border: none;
+  }
+
+  body {
+    overflow-x: hidden;
   }
 }

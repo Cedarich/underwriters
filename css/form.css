@@ -105,7 +105,7 @@ main {
 
 .top-content select {
   display: flex;
-
+  background-color: #ffffff;
   border: none;
   outline: none;
 }
@@ -658,6 +658,11 @@ hr {
   .sidebar,
   .logo-container {
     display: none;
+  }
+
+  .top-content {
+    border: none;
+    position: fixed;
   }
 }
 

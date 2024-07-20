@@ -104,7 +104,7 @@ main {
 
 .top-content select {
   display: flex;
-
+  background-color: #ffffff;
   border: none;
   outline: none;
 }
@@ -616,6 +616,10 @@ Media query for smaller screen */
   .sidebar,
   .logo-container {
     display: none;
+  }
+  .top-content {
+    border: none;
+    position: fixed;
   }
 }
 

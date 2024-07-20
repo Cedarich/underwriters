@@ -102,7 +102,7 @@ body {
 
 .top-content select {
   display: flex;
-
+  background-color: #ffffff;
   border: none;
   outline: none;
 }
@@ -592,6 +592,11 @@ header p {
   .sidebar,
   .logo-container {
     display: none;
+  }
+
+  .top-content {
+    border: none;
+    position: fixed;
   }
 }
 
