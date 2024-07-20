@@ -710,4 +710,8 @@ td {
   .request-grey a {
     font-size: 10px;
   }
+
+  #side-parent {
+    transition: transform 0.3s ease;
+  }
 }

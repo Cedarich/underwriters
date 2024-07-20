@@ -346,14 +346,14 @@ form {
   }
 
   #myBtn {
-    width: 30%;
+    width: 170px;
     height: 41px;
-    border-radius: 0px;
+    border-radius: 5px;
     font-size: 14px;
     font-weight: 600;
-    margin-left: 10px;
+    margin-left: 15px;
     padding-block: 0px;
-    margin-top: 0px;
+    margin-top: 10px;
   }
 
   .title-container p {
@@ -368,14 +368,18 @@ form {
     justify-content: center;
     margin: 5px;
   }
-  .logo-container img {
+  /* .logo-container img {
     width: 64px;
     height: 64px;
     margin-top: 10px;
-  }
+  } */
   .logo-container img {
-    width: 10.8rem;
-    height: 13.6rem;
+    width: 9.8rem;
+    height: 12.6rem;
+  }
+
+  .form-icon {
+    margin-right: 10px;
   }
 }
 
