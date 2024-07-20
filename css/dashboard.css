@@ -712,7 +712,7 @@ td {
     width: 9%;
   }
   .logo-container {
-    width: 15%%;
+    width: 15%;
   }
 
   .requests-grey {
@@ -747,4 +747,9 @@ td {
   img#canc {
     margin-top: -15px;
   }
+
+  /* li {
+    display: flex;
+    margin-left: -3px;
+  } */
 }
