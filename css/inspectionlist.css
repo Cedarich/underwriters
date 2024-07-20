@@ -540,4 +540,11 @@ tr {
   header p {
     white-space: nowrap;
   }
+
+  .top-content {
+    border: none;
+    position: fixed;
+    margin-top: 13px;
+    margin-left: 300px;
+  }
 }

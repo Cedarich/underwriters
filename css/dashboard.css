@@ -672,5 +672,6 @@ td {
   .top-content {
     border: none;
     position: fixed;
+    margin-bottom: 20px;
   }
 }

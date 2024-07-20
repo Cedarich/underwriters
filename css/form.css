@@ -684,5 +684,6 @@ hr {
   .top-content {
     border: none;
     position: fixed;
+    margin-top: 12px;
   }
 }

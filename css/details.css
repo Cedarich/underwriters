@@ -657,6 +657,7 @@ Media query for smaller screen */
   .top-content {
     border: none;
     position: fixed;
+    margin-top: 13px;
   }
 }
 

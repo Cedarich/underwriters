@@ -491,5 +491,6 @@ a {
   .top-content {
     border: none;
     position: fixed;
+    margin-top: 10px;
   }
 }

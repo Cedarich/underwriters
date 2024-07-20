@@ -321,6 +321,7 @@ form {
     padding: 20px 0px;
     padding-inline: 0px;
     justify-content: center;
+    margin-bottom: 1.5rem;
   }
 
   .reset {
