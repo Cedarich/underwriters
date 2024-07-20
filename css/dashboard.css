@@ -675,8 +675,11 @@ td {
     margin-bottom: 20px;
   }
 
+  .sidebar {
+    width: 10%;
+  }
   .logo-container {
-    width: 20%;
+    width: 15%;
   }
 
   .requests-grey {
@@ -685,5 +688,10 @@ td {
   .logo img {
     width: 90px;
     height: 33px;
+  }
+
+  .overview a,
+  .request-grey a {
+    font-size: 10px;
   }
 }
