@@ -14,6 +14,7 @@ body {
   align-items: center;
   min-height: 100vh;
   max-width: 100%;
+  background-color: #fffbf6;
 }
 .main-content {
   width: 100%;
@@ -26,6 +27,7 @@ body {
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
 }
@@ -104,7 +106,8 @@ body {
 
 .top-content select {
   display: flex;
-  background-color: #ffff;
+  background-color: #fffbf6;
+
   border: none;
   outline: none;
 }
@@ -125,13 +128,13 @@ header {
 }
 
 header h1 {
-  margin-top: 50px;
+  /* margin-top: 50px; */
 
   font-size: 22px;
   font-weight: 500;
   line-height: 27.61px;
   text-align: left;
-  margin-left: 37px;
+  /* margin-left: 37px; */
 }
 
 /* Username in bold text */
@@ -147,12 +150,12 @@ header h1 {
 }
 header p {
   font-size: 12px;
-  margin-left: 37px;
+  /* margin-left: 37px; */
   font-weight: 400;
   line-height: 15.06px;
   text-align: left;
   /* width: 312px; */
-  height: 15px;
+  /* height: 15px; */
   color: #2f2f2f;
 }
 
@@ -266,8 +269,9 @@ header p {
   height: 63px;
   margin-right: 50px;
   margin-top: 2rem;
-  color: #acacac;
-  background-color: #ffff;
+  /* color: #acacac; */
+  background-color: #fffbf6;
+
   border: none;
   cursor: pointer;
 }
@@ -318,10 +322,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   gap: 35px;
-
-  margin-top: 50px;
+  /* 
+  margin-top: 50px; */
 }
 
 .option {
@@ -405,9 +409,9 @@ a {
 } */
 
 .create-request {
-  width: 216px;
+  /* width: 216px; */
   height: 45px;
-  border-radius: 3.21px;
+  border-radius: 5.21px;
   padding: 10px;
   font-size: 14px;
   color: #ffff;
@@ -415,7 +419,7 @@ a {
   border: none;
   /* margin-left: 480px; */
   line-height: 17.57px;
-  margin-top: 80px;
+  margin-top: 50px;
   cursor: not-allowed;
   transition: background-color 0.3s ease;
 }
@@ -465,8 +469,8 @@ a {
 
 @media screen and (max-width: 800px) {
   .inspection-options {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
   }
@@ -491,6 +495,20 @@ a {
   .top-content {
     border: none;
     position: fixed;
-    margin-top: 10px;
+    /* padding: 10px; */
+  }
+
+  .top-content img {
+    width: 1rem;
+    height: 0.4rem;
+  }
+  .inspection-options .option pre-los img .option post-loss img {
+    width: 1.6rem;
+    height: 0.3rem;
+  }
+
+  .timeline-item,
+  .timeline2-item {
+    padding: 0px;
   }
 }

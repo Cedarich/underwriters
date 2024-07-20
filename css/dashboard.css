@@ -14,6 +14,7 @@ body {
   align-items: center;
   min-height: 100vh;
   max-width: 100%;
+  background-color: #fffbf6;
 }
 main {
   width: 100%;
@@ -104,7 +105,8 @@ main {
 
 .top-content select {
   display: flex;
-  background-color: #ffffff;
+  background-color: #fffbf6;
+
   border: none;
   outline: none;
 }
@@ -183,7 +185,8 @@ header .btn-new-inspection {
   min-height: 1216px;
   height: 100%;
   border-right: 1.2px solid #eeeeee;
-  background-color: #ffffff;
+  background-color: #fffbf6;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -194,7 +197,6 @@ header .btn-new-inspection {
   display: flex;
   width: 166px;
   height: 52px;
-  margin-top: 77px; /*I might comeback to adjust */
 }
 
 .trm {
@@ -312,8 +314,13 @@ header .btn-new-inspection {
 .created-inspections {
   width: 100%;
   overflow-x: auto;
+  background-color: #fffbf6;
 }
 
+table td,
+th {
+  background-color: #fffbf6;
+}
 .created-inspections h3 {
   font-weight: 500;
   font-size: 14px;
@@ -435,7 +442,8 @@ td {
 /* ACTIVITIES */
 
 .activity-card {
-  background-color: white;
+  background-color: #fffbf6;
+
   /* width: 404px;
   height: 300px; */
   margin-right: 22px;
@@ -672,7 +680,15 @@ td {
   .top-content {
     border: none;
     position: fixed;
-    margin-bottom: 20px;
+    /* margin-top: 20px; */
+  }
+
+  .top-content img {
+    width: 1rem;
+  }
+
+  .created-inspections td {
+    white-space: nowrap;
   }
 
   .sidebar {
