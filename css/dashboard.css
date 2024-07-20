@@ -621,10 +621,16 @@ td {
   .hamburger {
     display: block;
     position: fixed;
-    top: 20px;
-    left: 15px;
+    top: 10px;
+    left: 20px;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 9999;
+  }
+
+  .hamburger {
+    width: 30px;
+    height: 30px;
+  }
   }
   .sidebar,
   .logo-container {
