@@ -222,6 +222,10 @@ header .btn-new-inspection {
   cursor: pointer;
 }
 
+li {
+  display: flex;
+}
+
 .overview {
   display: flex;
   justify-content: left;
