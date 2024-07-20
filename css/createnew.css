@@ -189,7 +189,7 @@ header p {
   font-size: 16px;
   font-weight: 700;
   line-height: 20.08px;
-  margin-top: 95px;
+  margin-top: 195px;
   margin-left: 20px;
 }
 
@@ -508,5 +508,24 @@ a {
   .timeline-item,
   .timeline2-item {
     padding: 0px;
+  }
+
+  #sidebar.hidden {
+    transform: translateX(-100%);
+  }
+
+  #main {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+  }
+
+  #main .shifted {
+    margin-left: 0;
+  }
+
+  .hamburger {
+    font-size: 30px;
+    cursor: pointer;
   }
 }

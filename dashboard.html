@@ -297,7 +297,7 @@
           hamburger.classList.toggle("open");
           if (hamburger.classList.contains("open")) {
             cancel.style.display = "block";
-            cancel.style.marginLeft = "170px";
+            cancel.style.marginLeft = "140px";
             hamburger.style.display = "none";
             logoContainer.style.display = "block";
             main.style.marginLeft = "278px";
@@ -332,6 +332,18 @@
       document.getElementById("myBtn1").onclick = function () {
         window.location.href = "createnewinspection.html";
       };
+
+      // transition
+
+      document
+        .getElementById("hamburger")
+        .addEventListener("click", function () {
+          var sidebar = document.getElementById("sidebarParent");
+          // var content = document.getElementById("logoContainer");
+          var content = document.getElementById("main");
+          sidebar.classList.toggle("show");
+          content.classList.toggle("shifted");
+        });
     </script>
     <!-- <script src="/js/dashboard.js"></script> -->
   </body>

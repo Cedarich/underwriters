@@ -207,7 +207,7 @@ header .btn-new-inspection {
   font-size: 16px;
   font-weight: 700;
   line-height: 20.08px;
-  margin-top: 95px;
+  margin-top: 195px;
   margin-left: 20px;
 }
 
@@ -711,7 +711,26 @@ td {
     font-size: 10px;
   }
 
-  #side-parent {
-    transition: transform 0.3s ease;
+  /* #sidebarParent {
+    transition: transform 0.6s ease;
+  } */
+
+  #sidebarParent.hidden {
+    transform: translateX(-100%);
+  }
+
+  #main {
+    margin-left: 250px;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+  }
+
+  #main .shifted {
+    margin-left: 0;
+  }
+
+  .hamburger {
+    font-size: 30px;
+    cursor: pointer;
   }
 }

@@ -394,6 +394,18 @@
           sidebarParent.style.display = "none";
         }
       });
+
+      // transition
+
+      document
+        .getElementById("hamburger")
+        .addEventListener("click", function () {
+          var sidebar = document.getElementById("sidebarParent");
+          // var content = document.getElementById("logoContainer");
+          var content = document.getElementById("main");
+          sidebar.classList.toggle("show");
+          content.classList.toggle("shifted");
+        });
     </script>
     <!-- <script src="js/pre-loss.js"></script> -->
   </body>
