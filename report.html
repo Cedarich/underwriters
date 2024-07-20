@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>report</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/report.css" />
+    <link rel="icon" href="images/favicon-16x16.png" type="favicon" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Aside section holding navbar of icon -->
+      <div id="sidebarParent">
+        <aside class="sidebar" id="sidebar">
+          <nav class="">
+            <ul>
+              <li>
+                <a href="dashboard.html"
+                  ><img src="images/icon1.png" alt="Icon1"
+                /></a>
+              </li>
+              <li>
+                <a href="#" class="active">
+                  <img src="images/icon2.png" alt="Icon2" />
+                </a>
+              </li>
+              <li>
+                <a href="report.html"
+                  ><img src="images/icon3.png" alt="Icon3" />
+                </a>
+              </li>
+              <li>
+                <a href="details.html"
+                  ><img src="images/icon4.png" alt="Icon4"
+                /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/icon5.png" alt="Icon5" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="images/icon6.png" alt="Icon6" /></a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- Container holding logo request and overview -->
+
+        <div class="logo-container" id="logoContainer">
+          <div class="logo">
+            <img src="images/alt.png" alt="Leadway Assurance" />
+          </div>
+
+          <h3 class="trm">TRM</h3>
+          <nav>
+            <ul>
+              <li>
+                <div class="overview">
+                  <img src="images/over.png" alt="Overview" /><a
+                    href="dashboard.html"
+                    >Overview</a
+                  >
+                </div>
+              </li>
+              <div class="request-grey">
+                <li>
+                  <img src="images/req.png" alt="Requests" /><a
+                    href="inspectionlist.html"
+                    >Requests</a
+                  >
+                </li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Main content -->
+
+      <div class="main-content">
+        <div class="top-container">
+          <div class="hamburger" id="hamburger">
+            <img src="/images/hamburger.svg" alt="icon" id="ham" />
+            <img
+              src="/images/cancel.svg"
+              alt="icon"
+              id="canc"
+              style="display: none"
+            />
+          </div>
+          <div class="top-content">
+            <img
+              src="images/Vector.png"
+              class="notification"
+              alt="Notification"
+            />
+
+            <img src="images/group38.png" alt="Group38" />
+            <select name="" class="user">
+              <option value="">Godwin</option>
+              <option value="">Adesola</option>
+            </select>
+          </div>
+        </div>
+        <header>
+          <div class="welcome">
+            <h1>Survey report</h1>
+            <p>See Inspections across all business classes</p>
+          </div>
+        </header>
+
+        <div class="wrapper">
+          <div class="policy-card">
+            <div class="policy-details">
+              <div class="image-container">
+                <img src="images/tower.png" alt="Building" />
+                <p class="property-type"><span class="dot"></span> Property</p>
+              </div>
+
+              <div class="holder">
+                <div class="details-container">
+                  <h2>Rovenheights Properties LTD.</h2>
+                  <div class="details">
+                    <div>
+                      <p>Policy Number</p>
+                      <p class="value">ALR12358493</p>
+                    </div>
+                    <div>
+                      <p>Loss Type</p>
+                      <p class="value">Non-Motor</p>
+                    </div>
+                    <div>
+                      <p>Policy Term (Years)</p>
+                      <p class="value">5</p>
+                    </div>
+                    <div>
+                      <p>Expiry Date</p>
+                      <p class="value">19 Dec. 2024</p>
+                    </div>
+                    <div>
+                      <p>Commencement Date</p>
+                      <p class="value">19 Dec. 2019</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="policy-progress">
+                  <h3>Policy Progress</h3>
+                  <div class="progress-circle">
+                    <div class="circle">
+                      <div class="inside-circle">67%</div>
+                    </div>
+                  </div>
+                  <p>3 Days to Expiry</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabs-container">
+            <ul class="tabs">
+              <li class="tab active">Property Information</li>
+              <li class="tab">Property Description</li>
+              <li class="tab">Supporting Document</li>
+            </ul>
+            <div class="tab-content">
+              <div class="content active">
+                <div class="info-row">
+                  <div class="info-item">
+                    <p class="label">Insured for</p>
+                    <p class="value">Rovenheight Homes</p>
+                  </div>
+                  <div class="info-item">
+                    <p class="label">Insured Name</p>
+                    <p class="value">Rovenheight Homes</p>
+                  </div>
+                  <div class="info-item">
+                    <p class="label">Loss estimate</p>
+                    <p class="value">#1,200,000</p>
+                  </div>
+                  <div class="info-item">
+                    <p class="label">Cause of Loss</p>
+                    <p class="value">Rovenheight Homes</p>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <div class="info-item">
+                    <p class="label">Property Address</p>
+                    <p class="value">
+                      No. 16, Rovenheight Homes, Nicon town, Lekki phase 1,
+                      Lagos.
+                    </p>
+                  </div>
+                  <div class="info-item">
+                    <p class="label">City</p>
+                    <p class="value">Lekki</p>
+                  </div>
+                  <div class="info-item" id="lagos">
+                    <p class="label">State</p>
+                    <p class="value">Lagos</p>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <p id="description">
+                  Rovenheight homes registered as a LLC building on the 15th of
+                  May 2016 is a Grey and White twelve storey building located at
+                  No 12 OGUNSANYA DRIVE, ALCOVE ESTATE, LEKKI PHASE 1, LAGOS
+                  STATE. The property is owned by Mr. Badmus Akinrele who stands
+                  as the insurer of the property
+                </p>
+              </div>
+              <div class="content" id="supporting-document">
+                <div class="document-list">
+                  <div class="document-item">
+                    <p class="document-name">Policy document</p>
+                    <p class="document-date">25 Aug, 2022 9:00 AM</p>
+                    <div class="document-actions">
+                      <img src="images/eyes.png" alt="View" />
+                      <a href="#" class="view">View</a>
+                      <a href="#" class="download">Download</a>
+                    </div>
+                  </div>
+                  <div class="document-item">
+                    <p class="document-name">Police report</p>
+                    <p class="document-date">25 Aug, 2022 9:00 AM</p>
+                    <div class="document-actions">
+                      <img src="images/eyes.png" alt="View" />
+                      <a href="#" class="view">View</a>
+                      <a href="#" class="download">Download</a>
+                    </div>
+                  </div>
+                  <div class="document-item">
+                    <p class="document-name">Attached document</p>
+                    <p class="document-date">25 Aug, 2022 9:00 AM</p>
+                    <div class="document-actions">
+                      <img src="images/eyes.png" alt="View" />
+                      <a href="#" class="view">View</a>
+                      <a href="#" class="download">Download</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- wrapper -->
+      </div>
+      <!-- main content -->
+    </div>
+    <!-- container -->
+    <script src="js/report.js"></script>
+  </body>
+</html>

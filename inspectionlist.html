@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inspection</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/inspectionlist.css" />
+    <link rel="icon" href="images/favicon-16x16.png" type="favicon" />
+
+  </head>
+  <body>
+    <div class="container">
+      <!-- Aside section holding navbar of icon -->
+      <div id="sidebarParent">
+      <aside class="sidebar" id="sidebar">
+        <nav class="">
+          <ul>
+            <li>
+              <a href="dashboard.html"
+                ><img src="images/icon1.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="active">
+                <img src="images/icon2.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="report.html"><img src="images/icon3.png" alt="" /> </a>
+            </li>
+            <li>
+              <a href="details.html"><img src="images/icon4.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="createnewinspection.html"
+                ><img src="images/icon5.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="inspectionlist.html"
+                ><img src="images/icon6.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Container holding logo request and overview -->
+
+      <div class="logo-container" id="logoContainer">
+        <div class="logo">
+          <img src="images/alt.png" alt="Leadway Assurance" />
+        </div>
+
+        <h3 class="trm">TRM</h3>
+        <nav>
+          <ul>
+            <li>
+              <div class="overview">
+                <img src="images/Overview.png" alt="" /><a href="dashboard.html"
+                  >Overview</a
+                >
+              </div>
+            </li>
+            <div class="request-grey">
+              <li>
+                <img src="images/request.png" alt="" /><a
+                  href="inspectionlist.html"
+                  >Requests</a
+                >
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+      <!-- Main content -->
+
+      <main id="main">
+        <div class="main-content">
+          <div class="top-container">
+            <div class="hamburger" id="hamburger">
+              <img src="/images/hamburger.svg" alt="icon" id="ham" />
+              <img
+                src="/images/cancel.svg"
+                alt="icon"
+                id="canc"
+                style="display: none"
+              />
+            </div>
+
+            <div class="top-content">
+              <img src="images/Vector.png" class="notification" />
+              <img src="images/group38.png" />
+              <select name="" class="user">
+                <option value="">Godwin</option>
+                <option value="">Adesola</option>
+              </select>
+            </div>
+          </div>
+          <header>
+            
+
+          
+    
+          <div class="welcome">
+            <h1>Inspection List</h1>
+            <p>See Inspections across all business classes</p>
+          </div>
+          <button id="create-button" class="btn-new-inspection">
+            + Create New Inspection
+          </button>
+        </header>
+
+        <div class="wrapper">
+          <div class="tabs">
+            <button
+              id="all-request"
+              class="tab-button active"
+              onclick="showTab('all')"
+            >
+              All Requests
+            </button>
+            <button
+              id="ongoing"
+              class="tab-button"
+              onclick="showTab('ongoing')"
+            >
+              Ongoing
+            </button>
+            <button
+              id="completed"
+              class="tab-button"
+              onclick="showTab('completed')"
+            >
+              Completed
+            </button>
+          </div>
+          <div class="search-sort">
+            <div class="search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search" />
+            </div>
+
+            <div class="marine">
+              <div class="dot"></div>
+              marine x
+            </div>
+
+            <select class="sort-button"">
+              <option value="">Sort by</option>
+            </select>
+            <!-- <button class="sort-button">
+              Sort by:<span id="bbl"> Class</span>
+              <img src="images/ddown.png" alt="" />
+            </button> -->
+          </div>
+        </div>
+
+        <div class="inspection-table">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Date</th>
+                <th>Name</th>
+                <th>Inspection Method</th>
+                <th>Officer</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="all ongoing">
+                <td>10321</td>
+                <td>15/06/2023</td>
+                <td>Rovenheights properties</td>
+                <td>Digital</td>
+                <td>Mustapha Onasanya</td>
+                <td><span class="status-ongoing">Ongoing</span></td>
+              </tr>
+              <tr class="all completed">
+                <td>10321</td>
+                <td>12/06/2023</td>
+                <td>Shoprite Stores</td>
+                <td>Manual</td>
+                <td>Mustapha Onasanya</td>
+                <td><span class="status-completed">Completed</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/inspection.js"></script>
+  </body>
+</html>

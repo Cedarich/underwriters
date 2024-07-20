@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="icon" href="images/favicon-16x16.png" type="favicon" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Aside section holding navbar of icon -->
+
+      <div id="sidebarParent">
+        <aside class="sidebar" id="sidebar">
+          <nav class="">
+            <ul>
+              <li>
+                <a href="dashboard.html"
+                  ><img src="images/icon1.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="active">
+                  <img src="images/icon2.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="report.html"><img src="images/icon3.png" alt="" /> </a>
+              </li>
+              <li>
+                <a href="details.html"><img src="images/icon4.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="createnewinspection.html"
+                  ><img src="images/icon5.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="inspectionlist.html"
+                  ><img src="images/icon6.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+
+        <!-- Container holding logo request and overview -->
+
+        <div class="logo-container" id="logoContainer">
+          <div class="logo">
+            <img src="images/alt.png" alt="Leadway Assurance" />
+          </div>
+
+          <h3 class="trm">TRM</h3>
+          <nav>
+            <ul>
+              <li>
+                <div class="overview">
+                  <img src="images/Overview.png" alt="" /><a
+                    href="dashboard.html"
+                    >Overview</a
+                  >
+                </div>
+              </li>
+              <div class="request-grey">
+                <li>
+                  <img src="images/request.png" alt="" /><a
+                    href="inspectionlist.html"
+                    >Requests</a
+                  >
+                </li>
+              </div>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Main content -->
+
+      <main id="main">
+        <div class="main-content">
+          <div class="top-container">
+            <div class="hamburger" id="hamburger">
+              <img src="/images/hamburger.svg" alt="icon" id="ham" />
+              <img
+                src="/images/cancel.svg"
+                alt="icon"
+                id="canc"
+                style="display: none"
+              />
+            </div>
+
+            <div class="top-content">
+              <img src="images/Vector.png" class="notification" />
+              <img src="images/group38.png" />
+
+              <select name="" class="user">
+                <option value="">Godwin</option>
+                <option value="">Adesola</option>
+              </select>
+            </div>
+          </div>
+          <header>
+            <div class="welcome">
+              <h1>Welcome, <span class="bold">Godwin</span></h1>
+              <p>Take a look at your dashboard and see all pending tasks</p>
+            </div>
+
+            <button class="btn-new-inspection" id="myBtn1">
+              + Create New Inspection
+            </button>
+          </header>
+
+          <section class="requests">
+            <!-- Container showcasing the different colors of displayed cards -->
+
+            <div class="cards">
+              <div class="card" id="all-requests">
+                <h3>All Requests</h3>
+                <div class="icon"><img src="images/Click.png" alt="" /></div>
+                <div class="number">32</div>
+                <div class="background-shape shape1"></div>
+                <div class="background-shape shape2"></div>
+              </div>
+
+              <div class="card" id="completed-request">
+                <h3>Completed-Request</h3>
+                <div class="icon"><img src="images/Click.png" alt="" /></div>
+                <div class="number">114</div>
+                <div class="background-shape shape1"></div>
+                <div class="background-shape shape2"></div>
+              </div>
+
+              <div class="card" id="ongoing-request">
+                <h3>Ongoing-Request</h3>
+                <div class="icon"><img src="images/Click.png" alt="" /></div>
+                <div class="number">19</div>
+                <div class="background-shape shape1"></div>
+                <div class="background-shape shape2"></div>
+              </div>
+
+              <div class="card" id="delayed-requests">
+                <h3>Delayed Requests</h3>
+                <div class="icon"><img src="images/Click.png" alt="" /></div>
+                <div class="number">19</div>
+                <div class="background-shape shape1"></div>
+                <div class="background-shape shape2"></div>
+              </div>
+            </div>
+
+            <!-- Activity table besides the cards container -->
+
+            <div class="activity-card">
+              <div class="activity-header">
+                <h2>Activity</h2>
+                <a href="#">View all > </a>
+              </div>
+              <ul class="activity-list">
+                <li class="activity-item">
+                  <p>You have a property inspection coming up in three days</p>
+                  <a href="#">Set reminder</a>
+                </li>
+                <li class="activity-item">
+                  <p>
+                    Mustapha Onasanya sent a new property inspection for
+                    Rovenheight homes
+                  </p>
+                  <a href="#">See inspection</a>
+                </li>
+                <li class="activity-item">
+                  <p>
+                    Your scheduled inspection for Gig Logistics is three days
+                    overdue
+                  </p>
+                  <a href="#">Re-schedule now</a>
+                </li>
+                <li class="activity-item">
+                  <p>
+                    Mustapha Onasanya sent a new property inspection for
+                    Rovenheight homes
+                  </p>
+                  <a href="#">See inspection</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Tables -->
+
+          <section class="created-inspections">
+            <h3>Created Inspections</h3>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Class</th>
+                  <th>Inspection method</th>
+                  <th>Officer</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10321</td>
+                  <td>GIG Logistics</td>
+                  <td><span class="dot marine"></span>Marine</td>
+                  <td>Digital</td>
+                  <td>Mustapha Onasanya</td>
+                  <td><button class="status-quote">QUOTE REQUEST</button></td>
+                </tr>
+                <tr>
+                  <td>10321</td>
+                  <td>Shoprite Stores</td>
+                  <td><span class="dot property"></span>Property</td>
+                  <td>Manual</td>
+                  <td>Mustapha Onasanya</td>
+                  <td><button class="status-completed">Completed</button></td>
+                </tr>
+                <tr>
+                  <td>10321</td>
+                  <td>Abiodun Abayomi</td>
+                  <td><span class="dot motors"></span>Motors</td>
+                  <td>Digital</td>
+                  <td>Mustapha Onasanya</td>
+                  <td><button class="status-ongoing">Ongoing</button></td>
+                </tr>
+                <tr>
+                  <td>10321</td>
+                  <td>Ben's Agro Allied</td>
+                  <td><span class="dot agric"></span>Agric</td>
+                  <td>Manual</td>
+                  <td>Mustapha Onasanya</td>
+                  <td><button class="status-sent">SENT TO ENGINEER</button></td>
+                </tr>
+                <tr>
+                  <td>10321</td>
+                  <td>Abiodun Abayomi</td>
+                  <td><span class="dot bond"></span>Bond</td>
+                  <td>Digital</td>
+                  <td>Mustapha Onasanya</td>
+                  <td>
+                    <button class="status-link-expired">X Link expired</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10321</td>
+                  <td>Julius Berger</td>
+                  <td><span class="dot engineering"></span>Engineering</td>
+                  <td>Digital</td>
+                  <td>Mustapha Onasanya</td>
+                  <td>
+                    <button class="inspection-link">Inspection link</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>10321</td>
+                  <td>Abiodun Abayomi</td>
+                  <td><span class="dot agric"></span>Agric</td>
+                  <td>Digital</td>
+                  <td>Mustapha Onasanya</td>
+                  <td><button class="status-completed">Completed</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="/js/dashboard.js"></script>
+  </body>
+</html>
