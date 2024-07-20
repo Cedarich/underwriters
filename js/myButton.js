@@ -16,7 +16,7 @@ document.getElementById("myBtn").onclick = function () {
 //     }
 //   });
 
-document.getElementById("close-btn").onclick = function () {
-  document.getElementById("left").style.display = "show";
-  document.getElementById("right").style.display = "none";
-};
+// document.getElementById("close-btn").onclick = function () {
+//   document.getElementById("left").style.display = "show";
+//   document.getElementById("right").style.display = "none";
+// };
