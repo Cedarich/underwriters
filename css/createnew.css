@@ -404,7 +404,7 @@ a {
 }
 
 .create-request {
-  width: 216px;
+  width: 13rem;
   height: 45px;
   border-radius: 5.21px;
   padding: 10px;
@@ -529,8 +529,7 @@ a {
 
   #jaju {
     padding: 0px;
-    /* height: 6.3rem;
-    width: 50rem; */
+    margin-bottom: 1rem;
     white-space: nowrap;
     font-size: 14px;
     background: linear-gradient(145deg, #ff9a3a, #ff7a00, #cc6300);
