@@ -98,9 +98,12 @@
             <img src="images/Vector.png" class="notification" />
 
             <img src="images/group38.png" />
-            <select name="" class="user">
-              <option value="">Godwin</option>
-              <option value="">Adesola</option>
+            <select name="navigation" class="user" id="choose">
+              <option value="dashboard.html">Godwin</option>
+               <option value="details.html">Details</option></a>
+              <option value="report.html">Report</option>
+              <option value="createnewinspection.html">Sign-up</option>
+              <option value="index.html">Log-out</option>
             </select>
             
           </div>
@@ -250,6 +253,12 @@
           window.location.href = "createnewinspection.html";
         };
 
+        document.getElementById('choose').addEventListener('change', function() {
+            var selectedValue = this.value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        });
       </script>
 
     <!-- funtionalities with js -->
