@@ -779,7 +779,7 @@ td {
     width: 9%;
   }
   .logo-container {
-    width: 15%;
+    width: 20%;
     border: none;
   }
 
@@ -796,6 +796,27 @@ td {
   .overview a,
   .request-grey a {
     font-size: 0.7rem;
+  }
+
+  /* glow logo container */
+  .logo-container {
+    background-color: rgba(
+      255,
+      251,
+      246,
+      0.5
+    ); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    /* border: 1px solid rgba(255, 255, 255, 0.3); Light border for better visibility */
+    transition: all 0.3s ease-in-out; /* Smooth transitions */
+  }
+
+  .logo-container:hover {
+    background-color: rgba(255, 251, 246, 0.7); /* Increase opacity on hover */
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
   }
 
   /* #sidebarParent {
