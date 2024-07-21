@@ -707,7 +707,32 @@ hr {
     overflow-x: hidden;
   }
 
-  /* #state {
-    background-color: #ffffff;
-  } */
+  #send-request-btn,
+  #go-to-requests-btn,
+  #create-new-inspection-btn {
+    background: linear-gradient(145deg, #ff9a3a, #ff7a00, #cc6300);
+    border: none;
+    box-shadow: 0 5px 10px rgba(255, 122, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: gradientBackground 5s ease infinite;
+    overflow: hidden;
+    text-align: center;
+  }
+  .inspection-modal {
+    background-color: rgba(47, 47, 47, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for better visibility */
+  }
+
+  .success-modal-content {
+    background-color: rgba(47, 47, 47, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), 0 0 20px rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
 }
