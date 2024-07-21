@@ -752,6 +752,9 @@ td {
   .top-content {
     border: none;
   }
+  .top-content select {
+    margin-right: 0.5rem;
+  }
 
   .requests {
     overflow-y: hidden;
