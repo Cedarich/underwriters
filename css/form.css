@@ -703,6 +703,10 @@ hr {
     /* height: 0.4rem; */
   }
 
+  .form-container {
+    overflow-x: hidden;
+  }
+
   /* #state {
     background-color: #ffffff;
   } */

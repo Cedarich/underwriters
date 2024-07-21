@@ -462,10 +462,16 @@ a {
 
 @media screen and (max-width: 800px) {
   .inspection-options {
-    /* display: flex;
-    flex-wrap: wrap; */
+     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    overflow-x:hidden;
+  }
+
+  .inspection-options img {
+    /* width: 30rem;
+    height: 15.4rem; */
   }
   .selection {
     width: 20rem;
@@ -475,11 +481,15 @@ a {
     border: none;
     position: fixed;
   }
+  .container{
+    justify-content: right;
+  }
 }
 
 @media screen and (max-width: 425px) {
   .container {
     display: flex;
+    align-items: center;
     justify-content: center;
     height: 100%;
     width: 100%;
@@ -505,29 +515,6 @@ a {
     padding: 0px;
   }
 
-  #sidebar.hidden {
-    transform: translateX(-100%);
-  }
-
-  #main {
-    margin-left: 250px;
-    padding: 20px;
-    transition: margin-left 0.3s ease;
-  }
-
-  #main .shifted {
-    margin-left: 0;
-  }
-
-  .hamburger {
-    font-size: 30px;
-    cursor: pointer;
-  }
-
-  /* img {
-    width: 2rem;
-    height: 1.5rem;
-  } */
   .top-content select {
     margin-right: 0.5rem;
   }

@@ -549,48 +549,6 @@ tr {
     text-align: center;
   }
 
-  #create-button::before,
-  #create-button::after {
-    content: "";
-    position: absolute;
-    width: 140%; /* Larger than button to cover it */
-    height: 140%;
-    background: rgba(255, 255, 255, 0.1);
-    transform: rotate(45deg);
-    transition: all 0.5s;
-  }
-
-  #create-button::before {
-    top: -50%;
-    left: -50%;
-    border-radius: 60%;
-  }
-
-  #create-button::after {
-    bottom: -50%;
-    right: -50%;
-    border-radius: 40%;
-  }
-
-  #create-button:hover::before,
-  #create-button:hover::after {
-    top: -70%;
-    left: -70%;
-    bottom: -70%;
-    right: -70%;
-  }
-
-  #create-button:hover {
-    box-shadow: 0 8px 15px rgba(255, 122, 0, 0.4);
-    transform: translateY(-3px);
-    animation: pulse 1s infinite;
-  }
-
-  #create-button:active {
-    box-shadow: 0 5px 10px rgba(255, 122, 0, 0.3);
-    transform: translateY(1px);
-  }
-
   .search-sort {
     display: none;
   }
@@ -618,7 +576,11 @@ tr {
     width: 100%;
   }
 
-  body {
+  .container {
     overflow-y: hidden;
+  }
+
+  table {
+    overflow: auto;
   }
 }
