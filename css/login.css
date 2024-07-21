@@ -128,7 +128,6 @@ form {
 .checkbox-wrapper-28 {
   --size: 18px;
   position: relative;
-  margin-left: 3rem;
 }
 
 .checkbox-wrapper-28 *,
@@ -345,12 +344,12 @@ form {
   }
 
   #myBtn {
-    width: 37rem;
     height: 5rem;
     border-radius: 5px;
     font-size: 14px;
     font-weight: 600;
-    margin-left: 2rem;
+    /* margin-left: 1.8rem;
+    margin-right: 2rem; */
     padding-block: 10px;
     /* margin-top: 10px; */
   }
@@ -376,6 +375,7 @@ form {
   .logo-container img {
     width: 9.5rem;
     height: 11.6rem;
+    margin-left: 0.6rem;
   }
 
   /* .form-icon {
