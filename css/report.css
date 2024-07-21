@@ -47,7 +47,7 @@ body {
 }
 .sidebar nav {
   width: 100%;
-  margin-top: 10.5rem;
+  margin-top: 7.5rem;
 }
 .sidebar nav ul {
   list-style-type: none;
@@ -117,8 +117,6 @@ body {
 .notifiction {
   color: #585858;
 }
-/* header section welcoming the  user */
-
 header {
   align-items: center;
   width: 100%;
@@ -186,7 +184,7 @@ header p {
   font-size: 16px;
   font-weight: 700;
   line-height: 20.08px;
-  margin-top: 195px;
+  margin-top: 7rem;
   margin-left: 20px;
 }
 
