@@ -527,4 +527,7 @@ a {
     width: 2rem;
     height: 1.5rem;
   }
+  .top-content select {
+    margin-right: 0.5rem;
+  }
 }
