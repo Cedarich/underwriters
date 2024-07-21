@@ -784,8 +784,10 @@ td {
     border: none;
   }
 
-  .requests-grey {
-    padding: 0px;
+  .overview,
+  .request-grey {
+    /* padding: 0px; */
+    font-size: 0.9rem;
   }
   .logo img {
     width: 83px;
