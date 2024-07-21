@@ -707,9 +707,27 @@ hr {
     overflow-x: hidden;
   }
 
-  #send-request-btn,
-  #go-to-requests-btn,
-  #create-new-inspection-btn {
+  /* .success-modal-content div button {
+    background: linear-gradient(145deg, #ff9a3a, #ff7a00, #cc6300);
+    border: none;
+    box-shadow: 0 5px 10px rgba(255, 122, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: gradientBackground 5s ease infinite;
+    overflow: hidden;
+    text-align: center;
+  } */
+
+  .generate-button {
+    background: linear-gradient(145deg, #ff9a3a, #ff7a00, #cc6300);
+    border: none;
+    box-shadow: 0 5px 10px rgba(255, 122, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: gradientBackground 5s ease infinite;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  #send-request-btn {
     background: linear-gradient(145deg, #ff9a3a, #ff7a00, #cc6300);
     border: none;
     box-shadow: 0 5px 10px rgba(255, 122, 0, 0.3);
