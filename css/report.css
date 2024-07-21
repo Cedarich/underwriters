@@ -232,8 +232,8 @@ header p {
 
 .request-grey {
   display: flex;
-  padding: 10px;
-  /* margin: 10px; */
+  gap: 5px;
+  margin: 10px;
   justify-content: left;
   align-items: center;
 
@@ -250,7 +250,6 @@ header p {
 .request-grey img {
   width: 21.1px;
   height: 17px;
-  margin-right: 20.09px;
 }
 
 /* policy card style */

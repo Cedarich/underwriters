@@ -235,7 +235,7 @@ li {
   display: flex;
   justify-content: left;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   padding: 10px;
   color: #ff7a00;
   text-decoration: none;
@@ -258,13 +258,14 @@ li {
 
 .request-grey {
   display: flex;
-  /* padding: 10px; */
-
+  gap: 5px;
   justify-content: left;
   align-items: center;
   margin-top: 2rem;
   color: #ff7a00;
+  margin: 10px;
 }
+
 .request-grey a {
   font-weight: 400;
   font-size: 14px;
@@ -275,7 +276,7 @@ li {
 .request-grey img {
   width: 21.1px;
   height: 17px;
-  margin-right: 20.09px;
+  /* margin-right: 20.09px; */
 }
 
 /* STATUS BOX STYLE */
