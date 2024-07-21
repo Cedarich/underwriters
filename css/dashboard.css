@@ -105,7 +105,12 @@ main {
 
 .top-content select {
   display: flex;
+  font-weight: 400;
+  font-size: 10px;
   background-color: #fffbf6;
+  color: #585858;
+  justify-content: center;
+  align-items: center;
 
   border: none;
   outline: none;
@@ -755,6 +760,8 @@ td {
   .top-content {
     border: none;
     position: fixed;
+    margin-top: 0.9rem;
+    margin-right: 0.1rem;
   }
 
   .top-content img {
