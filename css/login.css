@@ -358,11 +358,12 @@ form {
     margin-right: 2rem; */
     padding-block: 8px;
     /* margin-top: 10px; */
-    transition: all 0.3s ease-in-out;
+    transition: padding-block 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
 
   #myBtn:hover {
     background-color: #f8963a;
+    padding-block: 16px;
   }
 
   .title-container p {
