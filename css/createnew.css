@@ -528,7 +528,7 @@ a {
     width: 100%;
   }
 
-  #jaju {
+  /* #jaju {
     padding: 0px;
     margin-bottom: 1rem;
     white-space: nowrap;
@@ -540,7 +540,7 @@ a {
     animation: gradientBackground 5s ease infinite;
     overflow: hidden;
     text-align: center;
-  }
+  } */
 
   .container {
     justify-content: right;
