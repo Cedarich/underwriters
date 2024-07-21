@@ -555,8 +555,8 @@ tr {
   .top-content {
     border: none;
     position: fixed;
-    margin-top: 13px;
-    /* margin-left: 300px; */
+    margin-top: 0.9rem;
+    margin-right: 0.1rem;
   }
 
   .top-content img {
