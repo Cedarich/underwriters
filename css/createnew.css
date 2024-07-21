@@ -317,8 +317,8 @@ a {
 }
 
 .wrapper {
-  margin-bottom: 200px;
-  padding: 20px;
+  /* margin-bottom: 200px; */
+  /* padding: 20px; */
   width: 100%;
 }
 
@@ -326,10 +326,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 20px; */
-  gap: 35px;
-  /* 
-  margin-top: 50px; */
+  gap: 20px;
 }
 
 .option {
@@ -367,7 +364,6 @@ a {
   display: block;
   align-self: flex-start;
   height: 20px;
-  /* margin-left: 270px; */
   margin-top: 20px;
   margin-bottom: 20px;
   white-space: nowrap;
@@ -404,13 +400,6 @@ a {
   position: absolute;
   top: 100px;
 }
-/* .pp {
-  width: 9px;
-  height: 9px;
-
-  background-color: #175cd3;
-  margin-left: 50px;
-} */
 
 .create-request {
   /* width: 216px; */
@@ -491,7 +480,7 @@ a {
 @media screen and (max-width: 425px) {
   .container {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     height: 100%;
     width: 100%;
   }
@@ -505,7 +494,7 @@ a {
   .top-content img {
     width: 1rem;
   }
-  .inspection-options .option pre-los img .option post-loss img {
+  .wrapper .option pre-los img .option post-loss img {
     width: 1.6rem;
     height: 0.3rem;
   }
@@ -532,5 +521,10 @@ a {
   .hamburger {
     font-size: 30px;
     cursor: pointer;
+  }
+
+  img {
+    width: 2rem;
+    height: 1.5rem;
   }
 }
