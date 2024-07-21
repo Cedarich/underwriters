@@ -531,4 +531,8 @@ a {
   .top-content select {
     margin-right: 0.5rem;
   }
+
+  .top-container {
+    width: 100%;
+  }
 }
