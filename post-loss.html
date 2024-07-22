@@ -106,7 +106,7 @@
               <img src="images/group38.png" />
               <select name="navigation" class="user" id="choose">
                 <option value="dashboard.html">Godwin</option>
-                 <option value="details.html">Details</option></a>
+                <option value="details.html">Details</option>
                 <option value="report.html">Report</option>
                 <option value="createnewinspection.html">Sign-up</option>
                 <option value="index.html">Log-out</option>
@@ -135,10 +135,9 @@
 
           <section>
             <div class="form-container">
-              
-                <div id="alert-message" class="alert-message">
-                  Please fill in all required fields before proceeding.
-                </div>
+              <div id="alert-message" class="alert-message">
+                Please fill in all required fields before proceeding.
+              </div>
               <div class="form-title">Post-Loss Inspection - Property</div>
 
               <hr />
@@ -436,71 +435,72 @@
         }
       });
 
-
       // Forms Validation
       document.addEventListener("DOMContentLoaded", function () {
-  const generateButton = document.querySelector(".generate-button");
-  const alertMessage = document.getElementById("alert-message");
+        const generateButton = document.querySelector(".generate-button");
+        const alertMessage = document.getElementById("alert-message");
 
-  const requiredFields = [
-    document.getElementById("insured-for"),
-    document.getElementById("assign-to"),
-    document.getElementById("first-name"),
-    document.getElementById("last-name"),
-    document.getElementById("phone-number"),
-    document.getElementById("email"),
-    document.getElementById("risk-house-number"),
-    document.getElementById("risk-address"),
-    document.getElementById("state"),
-    document.getElementById("lga"),
-    document.getElementById("property-description")
-  ];
+        const requiredFields = [
+          document.getElementById("insured-for"),
+          document.getElementById("assign-to"),
+          document.getElementById("first-name"),
+          document.getElementById("last-name"),
+          document.getElementById("phone-number"),
+          document.getElementById("email"),
+          document.getElementById("risk-house-number"),
+          document.getElementById("risk-address"),
+          document.getElementById("state"),
+          document.getElementById("lga"),
+          document.getElementById("property-description"),
+        ];
 
-  // Disable the button initially
-  generateButton.disabled = true;
+        // Disable the button initially
+        generateButton.disabled = true;
 
-  function checkFields() {
-    let allFilled = true;
-    let valid = true;
+        function checkFields() {
+          let allFilled = true;
+          let valid = true;
 
-    requiredFields.forEach(field => {
-      const value = field.element.value.trim();
-      if (value === "") {
-        allFilled = false;
-      } else if (field.type === "digit" && !/^\d+$/.test(value)) {
-        valid = false;
-      } else if (field.type === "string" && !/^[a-zA-Z\s]+$/.test(value)) {
-        valid = false;
-      }
-    });
+          requiredFields.forEach((field) => {
+            const value = field.element.value.trim();
+            if (value === "") {
+              allFilled = false;
+            } else if (field.type === "digit" && !/^\d+$/.test(value)) {
+              valid = false;
+            } else if (
+              field.type === "string" &&
+              !/^[a-zA-Z\s]+$/.test(value)
+            ) {
+              valid = false;
+            }
+          });
 
-    generateButton.disabled = !(allFilled && valid);
-    alertMessage.style.display = (allFilled && valid) ? "none" : "block";
+          generateButton.disabled = !(allFilled && valid);
+          alertMessage.style.display = allFilled && valid ? "none" : "block";
 
-    if (!valid) {
-      alertMessage.textContent = "Please enter valid data in all required fields.";
-    } else if (!allFilled) {
-      alertMessage.textContent = "Please fill in all required fields before proceeding.";
-    }
-  }
+          if (!valid) {
+            alertMessage.textContent =
+              "Please enter valid data in all required fields.";
+          } else if (!allFilled) {
+            alertMessage.textContent =
+              "Please fill in all required fields before proceeding.";
+          }
+        }
 
-  requiredFields.forEach(field => {
-    field.element.addEventListener("input", checkFields);
-  });
+        requiredFields.forEach((field) => {
+          field.element.addEventListener("input", checkFields);
+        });
 
-  generateButton.addEventListener("click", function (event) {
-    event.preventDefault();
-    if (generateButton.disabled) {
-      alertMessage.style.display = "block";
-    } else {
-      alertMessage.style.display = "none";
-      console.log("Form submitted successfully");
-      
-    }
-  });
-});
-
-
+        generateButton.addEventListener("click", function (event) {
+          event.preventDefault();
+          if (generateButton.disabled) {
+            alertMessage.style.display = "block";
+          } else {
+            alertMessage.style.display = "none";
+            console.log("Form submitted successfully");
+          }
+        });
+      });
     </script>
   </body>
 </html>
