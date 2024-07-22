@@ -456,11 +456,11 @@ td {
 
   /* width: 404px;
   height: 300px; */
-  margin-right: 22px;
+  /* margin-right: 22px; */
   border: 1px solid #d8d8d8;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 1rem;
 }
 .activity-header {
   display: flex;
@@ -599,7 +599,7 @@ td {
   top: 20px;
   left: 20px;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 /* .hamburger .ham,
@@ -686,48 +686,7 @@ td {
     animation: gradientBackground 5s ease infinite;
     overflow: hidden;
     text-align: center;
-  }
-
-  #myBtn1::before,
-  #myBtn1::after {
-    content: "";
-    position: absolute;
-    width: 140%; /* Larger than button to cover it */
-    height: 140%;
-    background: rgba(255, 255, 255, 0.1);
-    transform: rotate(45deg);
-    transition: all 0.5s;
-  }
-
-  #myBtn1::before {
-    top: -50%;
-    left: -50%;
-    border-radius: 60%;
-  }
-
-  #myBtn1::after {
-    bottom: -50%;
-    right: -50%;
-    border-radius: 40%;
-  }
-
-  #myBtn1:hover::before,
-  #myBtn1:hover::after {
-    top: -70%;
-    left: -70%;
-    bottom: -70%;
-    right: -70%;
-  }
-
-  #myBtn1:hover {
-    box-shadow: 0 8px 15px rgba(255, 122, 0, 0.4);
-    transform: translateY(-3px);
-    animation: pulse 1s infinite;
-  }
-
-  #myBtn1:active {
-    box-shadow: 0 5px 10px rgba(255, 122, 0, 0.3);
-    transform: translateY(1px);
+    margin-bottom: 0.3rem;
   }
 
   header h1 {
@@ -759,6 +718,7 @@ td {
 
   .requests {
     overflow-y: hidden;
+    padding: 0.2rem;
   }
 
   .top-content {
@@ -845,9 +805,4 @@ td {
   .trm {
     margin-right: 20px;
   }
-
-  /* li {
-    display: flex;
-    margin-left: -3px;
-  } */
 }

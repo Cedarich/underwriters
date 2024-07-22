@@ -471,13 +471,12 @@ a {
     padding: 0px;
   }
 
-  .inspection-options {
+  .wrapper {
     display: flex;
-    /* flex-direction: column; */
-    gap: 10px;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
+    flex-direction: column;
+    width: 100%;
   }
 
   #jaj img {
@@ -494,6 +493,7 @@ a {
     width: 135px;
     height: 154px;
   }
+
   .selection {
     width: 20rem;
   }
@@ -507,11 +507,21 @@ a {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .inspection-options {
+    display: flex;
+    /* gap: 10px; */
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .container {
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     height: 100%;
     width: 100%;
     padding: 0px;
@@ -556,6 +566,21 @@ a {
   } */
 
   .container {
-    justify-content: right;
+    justify-content: center;
+  }
+
+  #jaj img {
+    width: 135px;
+    height: 154px;
+  }
+
+  .option {
+    width: 135px;
+    height: 154px;
+  }
+
+  #kenya {
+    width: 135px;
+    height: 154px;
   }
 }
