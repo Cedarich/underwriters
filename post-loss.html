@@ -135,6 +135,10 @@
 
           <section>
             <div class="form-container">
+              
+                <div id="alert-message" class="alert-message">
+                  Please fill in all required fields before proceeding.
+                </div>
               <div class="form-title">Post-Loss Inspection - Property</div>
 
               <hr />
@@ -201,6 +205,9 @@
 
                     <select id="phone-prefix">
                       <option value="+234">+234</option>
+                      <option value="+234">+433</option>
+                      <option value="+234">+971</option>
+                      <option value="+234">+682</option>
                     </select>
 
                     <input type="text" id="phone-number" />
@@ -239,7 +246,12 @@
                   <label for="state">State</label>
                   <div class="icon-placeholder">
                     <select id="state">
-                      <option value="">Select a language</option>
+                      <option value="">Select a state</option>
+                      <option value="">Kaduna</option>
+                      <option value="">Abuja</option>
+                      <option value="">Lagos</option>
+                      <option value="">Osun</option>
+                      <option value="">Kano</option>
                     </select>
                   </div>
                 </div>
@@ -247,7 +259,14 @@
                   <label for="lga">LGA</label>
                   <div class="icon-placeholder">
                     <select id="lga">
-                      <option value="">Select a language</option>
+                      <option value="">Select a lga</option>
+                      <option value="">South</option>
+                      <option value="">North</option>
+                      <option value="">Chikun</option>
+                      <option value="">Igara</option>
+                      <option value="">Kachia</option>
+                      <option value="">Lere</option>
+                      <option value="">Makarfi</option>
                     </select>
                   </div>
                 </div>
@@ -416,6 +435,72 @@
           window.location.href = selectedValue;
         }
       });
+
+
+      // Forms Validation
+      document.addEventListener("DOMContentLoaded", function () {
+  const generateButton = document.querySelector(".generate-button");
+  const alertMessage = document.getElementById("alert-message");
+
+  const requiredFields = [
+    document.getElementById("insured-for"),
+    document.getElementById("assign-to"),
+    document.getElementById("first-name"),
+    document.getElementById("last-name"),
+    document.getElementById("phone-number"),
+    document.getElementById("email"),
+    document.getElementById("risk-house-number"),
+    document.getElementById("risk-address"),
+    document.getElementById("state"),
+    document.getElementById("lga"),
+    document.getElementById("property-description")
+  ];
+
+  // Disable the button initially
+  generateButton.disabled = true;
+
+  function checkFields() {
+    let allFilled = true;
+    let valid = true;
+
+    requiredFields.forEach(field => {
+      const value = field.element.value.trim();
+      if (value === "") {
+        allFilled = false;
+      } else if (field.type === "digit" && !/^\d+$/.test(value)) {
+        valid = false;
+      } else if (field.type === "string" && !/^[a-zA-Z\s]+$/.test(value)) {
+        valid = false;
+      }
+    });
+
+    generateButton.disabled = !(allFilled && valid);
+    alertMessage.style.display = (allFilled && valid) ? "none" : "block";
+
+    if (!valid) {
+      alertMessage.textContent = "Please enter valid data in all required fields.";
+    } else if (!allFilled) {
+      alertMessage.textContent = "Please fill in all required fields before proceeding.";
+    }
+  }
+
+  requiredFields.forEach(field => {
+    field.element.addEventListener("input", checkFields);
+  });
+
+  generateButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    if (generateButton.disabled) {
+      alertMessage.style.display = "block";
+    } else {
+      alertMessage.style.display = "none";
+      console.log("Form submitted successfully");
+      
+    }
+  });
+});
+
+
     </script>
   </body>
 </html>

@@ -651,6 +651,18 @@ hr {
   z-index: 1000;
 }
 
+.alert-message {
+  background-color: #f8d7da; /* Light red background */
+  color: #721c24; /* Dark red text */
+  border: 1px solid #f5c6cb; /* Light red border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px; /* Padding inside the alert box */
+  margin-bottom: 15px; /* Space below the alert box */
+
+  font-size: 14px; /* Font size */
+  text-align: center; /* Center the text */
+}
+
 /* Media query for small screen */
 
 @media screen and (max-width: 888px) {
