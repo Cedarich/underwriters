@@ -403,7 +403,6 @@ a {
 }
 
 .create-request {
-  width: 13rem;
   height: 45px;
   border-radius: 5.21px;
   padding: 10px;
@@ -413,7 +412,7 @@ a {
   border: none;
   /* margin-left: 480px; */
   line-height: 17.57px;
-  margin-top: 1rem;
+  margin-top: 1.3rem;
   cursor: not-allowed;
   transition: background-color 0.3s ease;
 }
@@ -504,6 +503,10 @@ a {
   }
   .container {
     justify-content: right;
+  }
+
+  .x {
+    color: #ff9500;
   }
 }
 
