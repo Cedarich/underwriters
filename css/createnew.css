@@ -290,8 +290,7 @@ a {
   display: block;
   background-color: #fffbf6;
   border: none;
-  width: 48px;
-  height: 48px;
+
   font-size: 46px;
 }
 
@@ -466,21 +465,35 @@ a {
   .container {
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
     height: 100%;
     width: 100%;
     padding: 0px;
   }
 
   .inspection-options {
-    gap: 0px;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
     justify-content: center;
     align-items: center;
     overflow-x: hidden;
   }
 
+  #jaj img {
+    width: 135px;
+    height: 154px;
+  }
+
+  .option {
+    width: 135px;
+    height: 154px;
+  }
+
+  #kenya {
+    width: 135px;
+    height: 154px;
+  }
   .selection {
     width: 20rem;
   }

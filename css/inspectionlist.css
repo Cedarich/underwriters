@@ -577,10 +577,13 @@ tr {
   }
 
   .container {
-    overflow-y: hidden;
+    overflow: hidden;
   }
+  /* inspection-table {
+    overflow: hidden;
+  } */
 
-  table {
-    overflow: auto;
+  .inspection-table {
+    overflow-x: auto;
   }
 }
