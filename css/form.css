@@ -479,6 +479,10 @@ hr {
   min-height: 170px;
 }
 
+nav input {
+  background-color: transparent;
+}
+
 .text-btn {
   display: flex;
   align-items: center;
