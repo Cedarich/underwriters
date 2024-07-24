@@ -64,8 +64,8 @@ button {
 .title-container {
   display: flex;
   flex-direction: column;
-  /* gap: 0.5rem; */
-  margin-block: 3rem;
+  gap: 1rem;
+  margin-block: 1rem;
 }
 .title-container h1 {
   font-size: 3.2rem;
@@ -338,6 +338,8 @@ input {
 
   .form-group div input {
     font-size: 14px;
+    width: 90%;
+    margin: auto;
   }
 
   .form-group {
@@ -346,18 +348,36 @@ input {
 
   .form-group label {
     font-size: 18px;
+    width: 90%;
+    /* margin: auto; */
   }
 
+  label {
+    margin-left: 0.4rem;
+  }
   #myBtn {
     height: 5rem;
     border-radius: 5px;
     font-size: 14px;
     font-weight: 600;
-    /* margin-left: 1.8rem;
-    margin-right: 2rem; */
+    width: 90%;
+    margin: auto;
     padding-block: 8px;
-    /* margin-top: 10px; */
+    margin-top: 2rem;
     transition: padding-block 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  .show {
+    margin-right: -10px;
+  }
+
+  .log-status {
+    width: 90%;
+    margin: auto;
+  }
+
+  .form-group > div {
+    width: 90%;
   }
 
   #myBtn:hover {
@@ -382,7 +402,7 @@ input {
   .logo-container img {
     /* width: 64px; */
     /* height: 64px; */
-    margin-top: 4.8rem;
+    margin-top: 1.8rem;
   }
   .logo-container img {
     width: 9.5rem;
