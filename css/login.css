@@ -317,6 +317,7 @@ input {
   .container {
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
   .right {
     display: none;
