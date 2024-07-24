@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0.1rem;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -46,7 +46,7 @@ button {
 }
 
 .left {
-  width: 45%;
+  width: 50%;
   height: 100%;
   background-color: #fffbf6;
   display: flex;
@@ -54,6 +54,7 @@ button {
   gap: 2rem;
   padding-inline: 8rem;
   padding-top: 2rem;
+  justify-content: center;
 }
 
 .left .logo-container {
@@ -68,7 +69,7 @@ button {
 }
 .title-container h1 {
   font-size: 3.2rem;
-
+  white-space: nowrap;
   color: #585858;
   font-weight: bold;
 }
@@ -81,7 +82,7 @@ button {
 form {
   display: flex;
   flex-direction: column;
-  gap: 2.3rem;
+  gap: 1.3rem;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1),
     0 16px 32px rgba(0, 0, 0, 0.1); */
 }
@@ -207,10 +208,9 @@ form {
   }
 }
 
-/* .form-icon {
-  width: 2rem;
-  height: 2rem;
-} */
+input {
+  background: white;
+}
 .show {
   background-color: transparent;
   border: none;
@@ -229,7 +229,6 @@ form {
 #myBtn {
   width: 100%;
   background-color: #ff7a00;
-  font-weight: bold;
   font-size: 2.4rem;
   font-family: inherit;
   margin-top: 1.5rem;
@@ -244,7 +243,7 @@ form {
   background-color: #f8963a;
 }
 .right {
-  width: 55%;
+  width: 50%;
   position: relative;
   background: linear-gradient(45deg, #f16022, #ffa726);
   background-image: url("../images/banner.png");
@@ -314,7 +313,7 @@ form {
   color: #585858;
 }
 /* MEDIA QUERY */
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 768px) {
   .container {
     align-items: center;
     justify-content: center;
@@ -323,7 +322,7 @@ form {
     display: none;
   }
   .left {
-    padding: 20px 0px;
+    /* padding: 20px 0px; */
     padding-inline: 0px;
     justify-content: center;
     margin-bottom: 2.5rem;
@@ -380,11 +379,11 @@ form {
     justify-content: center;
     margin: 1rem;
   }
-  /* .logo-container img {
-    width: 64px;
-    height: 64px;
-    margin-top: 10px;
-  } */
+  .logo-container img {
+    /* width: 64px; */
+    /* height: 64px; */
+    margin-top: 4.8rem;
+  }
   .logo-container img {
     width: 9.5rem;
     height: 11.6rem;
