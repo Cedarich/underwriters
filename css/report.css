@@ -136,7 +136,8 @@ header h1 {
 /* Username in bold text */
 
 .welcome {
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 20px 15em;
+  /* margin-left: 3em; */
 }
 
 .bold {
@@ -611,6 +612,11 @@ header p {
 }
 
 @media screen and (max-width: 522px) {
+  .welcome {
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+  }
   .logo-container {
     display: none;
   }

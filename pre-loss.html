@@ -435,7 +435,50 @@
           window.location.href = selectedValue;
         }
       });
+
+      // Disable the button initially
+      generateButton.disabled = true;
+
+      function checkFields() {
+        let allFilled = true;
+        let valid = true;
+
+        requiredFields.forEach((field) => {
+          const value = field.element.value.trim();
+          if (value === "") {
+            allFilled = false;
+          } else if (field.type === "digit" && !/^\d+$/.test(value)) {
+            valid = false;
+          } else if (field.type === "string" && !/^[a-zA-Z\s]+$/.test(value)) {
+            valid = false;
+          }
+        });
+
+        generateButton.disabled = !(allFilled && valid);
+        alertMessage.style.display = allFilled && valid ? "none" : "block";
+
+        if (!valid) {
+          alertMessage.textContent =
+            "Please enter valid data in all required fields.";
+        } else if (!allFilled) {
+          alertMessage.textContent =
+            "Please fill in all required fields before proceeding.";
+        }
+      }
+
+      requiredFields.forEach((field) => {
+        field.element.addEventListener("input", checkFields);
+      });
+
+      generateButton.addEventListener("click", function (event) {
+        event.preventDefault();
+        if (generateButton.disabled) {
+          alertMessage.style.display = "block";
+        } else {
+          alertMessage.style.display = "none";
+          console.log("Form submitted successfully");
+        }
+      });
     </script>
-    <!-- <script src="js/pre-loss.js"></script> -->
   </body>
 </html>

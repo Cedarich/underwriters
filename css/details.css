@@ -96,7 +96,6 @@ main {
   display: flex;
   position: fixed;
   align-self: flex-end;
-
   align-items: center;
   justify-content: center;
   gap: 5px;
