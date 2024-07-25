@@ -114,7 +114,7 @@
 
               <select name="navigation" class="user" id="choose">
                 <option value="dashboard.html">Godwin</option>
-                 <option value="details.html">Details</option></a>
+                <option value="details.html">Details</option>
                 <option value="report.html">Report</option>
                 <option value="createnewinspection.html">Sign-up</option>
                 <option value="index.html">Log-out</option>
@@ -353,14 +353,14 @@
           content.classList.toggle("shifted");
         });
 
-        // Select navigation
+      // Select navigation
 
-        document.getElementById('choose').addEventListener('change', function() {
-            var selectedValue = this.value;
-            if (selectedValue) {
-                window.location.href = selectedValue;
-            }
-        });
+      document.getElementById("choose").addEventListener("change", function () {
+        var selectedValue = this.value;
+        if (selectedValue) {
+          window.location.href = selectedValue;
+        }
+      });
     </script>
     <!-- <script src="/js/dashboard.js"></script> -->
   </body>

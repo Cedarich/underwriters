@@ -96,7 +96,7 @@ main {
   display: flex;
   position: fixed;
   align-self: flex-end;
-  border-bottom: 1.2px solid #eeeeee;
+
   align-items: center;
   justify-content: center;
   gap: 5px;
