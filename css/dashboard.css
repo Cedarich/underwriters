@@ -95,15 +95,16 @@ main {
 .top-content {
   display: flex;
   position: absolute;
+  margin-top: 20px;
   align-self: flex-end;
-  /* margin-top: -50px; */
+  border: none;
   align-items: center;
   justify-content: center;
   gap: 10px;
   color: #585858;
 }
 
-/* .top-content select {
+.top-content select {
   display: flex;
   font-weight: 400;
   font-size: 10px;
@@ -114,7 +115,7 @@ main {
 
   border: none;
   outline: none;
-} */
+}
 
 .notifiction {
   color: #585858;
@@ -593,52 +594,16 @@ td {
   bottom: -20px;
   left: -20px;
 }
-
-.custom-select {
-  position: relative;
-  display: inline-block;
-  width: 120px;
-}
-.custom-select select {
-  display: none; /* Hide default select */
-}
-.select-selected {
-  padding: 16px;
-  font-size: 14px;
+top-content select {
+  display: flex;
+  font-weight: 400;
+  font-size: 10px;
+  background-color: #fffbf6;
+  color: #585858;
+  justify-content: center;
+  align-items: center;
   border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  width: 100%;
-  box-sizing: border-box;
-}
-.select-items {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 100%;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 5px;
-  border: 1px solid #ddd;
-}
-.select-items div {
-  color: black;
-  padding: 12px 16px;
-  cursor: pointer;
-}
-.select-items div:hover {
-  background-color: #f1f1f1;
-}
-.custom-select.active .select-items {
-  display: block;
-}
-.custom-select.active .select-selected:after {
-  content: "▲";
-}
-.select-selected:after {
-  content: "▼";
-
-  margin-left: 10px;
+  outline: none;
 }
 
 .hamburger {
@@ -700,17 +665,11 @@ img#ham {
     z-index: 9999;
   }
 
-  /* .hamburger {
-    width: 30px;
-    height: 30px;
-  } */
-
   .sidebar,
   .logo-container {
     display: none;
   }
   .top-content {
-    /* position: fixed; */
     border: none;
   }
   img#ham {
@@ -794,12 +753,6 @@ img#ham {
     padding: 0.2rem;
   }
 
-  /* .top-content {
-    border: none;
-    z-index: 1;
-    margin-top: -2.2rem;
-  } */
-
   .top-content img {
     width: 1rem;
   }
@@ -819,7 +772,7 @@ img#ham {
   .overview,
   .request-grey {
     /* padding: 0px; */
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .logo img {
     width: 83px;
