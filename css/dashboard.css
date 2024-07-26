@@ -94,16 +94,16 @@ main {
 
 .top-content {
   display: flex;
-  /* position: fixed; */
+  position: absolute;
   align-self: flex-end;
-  margin-top: -30px;
+  /* margin-top: -50px; */
   align-items: center;
   justify-content: center;
   gap: 10px;
   color: #585858;
 }
 
-.top-content select {
+/* .top-content select {
   display: flex;
   font-weight: 400;
   font-size: 10px;
@@ -114,7 +114,7 @@ main {
 
   border: none;
   outline: none;
-}
+} */
 
 .notifiction {
   color: #585858;
@@ -202,6 +202,7 @@ header .btn-new-inspection {
   display: flex;
   width: 166px;
   height: 52px;
+  margin-top: 10px;
 }
 
 .trm {
@@ -643,10 +644,14 @@ td {
 .hamburger {
   display: block;
   /* position: fixed; */
-  margin-top: 20px;
-  margin-left: 20px;
+  margin-top: 10px;
+  /* margin-left: 20px; */
   cursor: pointer;
   z-index: 10000;
+}
+
+img#ham {
+  width: 40px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -659,6 +664,9 @@ td {
   #delayed-requests {
     width: 100%;
     height: 10rem;
+  }
+  img#ham {
+    width: 50px;
   }
 }
 
@@ -692,10 +700,10 @@ td {
     z-index: 9999;
   }
 
-  .hamburger {
+  /* .hamburger {
     width: 30px;
     height: 30px;
-  }
+  } */
 
   .sidebar,
   .logo-container {
@@ -705,9 +713,20 @@ td {
     /* position: fixed; */
     border: none;
   }
+  img#ham {
+    width: 45px;
+  }
 }
 
 @media screen and (max-width: 430px) {
+  /* .container {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  } */
+  img#ham {
+    width: 40px;
+  }
   .cards {
     grid-template-columns: 1fr;
     justify-content: center;
@@ -775,11 +794,11 @@ td {
     padding: 0.2rem;
   }
 
-  .top-content {
+  /* .top-content {
     border: none;
     z-index: 1;
     margin-top: -2.2rem;
-  }
+  } */
 
   .top-content img {
     width: 1rem;
@@ -851,9 +870,9 @@ td {
     margin-left: 0;
   }
 
-  img#canc {
+  /* img#canc {
     margin-top: -0.3rem;
-  }
+  } */
 
   .trm {
     margin-right: 20px;
@@ -868,14 +887,17 @@ td {
 
 @media screen and (max-width: 320px) {
   .hamburger {
-    margin-left: -60px;
-    margin-top: 1.6em;
+    margin-left: -10em;
   }
 
+  img#ham {
+    width: 40px;
+    margin-top: -1.9px;
+  }
   .welcome h1 {
-    font-size: 2em;
+    font-size: 1.8rem;
   }
   .welcome p {
-    fomt-size: 1em;
+    fomt-size: 0.5rem;
   }
 }
