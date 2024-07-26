@@ -695,7 +695,7 @@ img#ham {
     display: block;
     /* position: fixed; */
     top: 10px;
-    left: 20px;
+    margin-left: 50px;
     cursor: pointer;
     z-index: 9999;
   }
@@ -844,8 +844,6 @@ img#ham {
     backdrop-filter: blur(10px); /* Blur effect */
 
     border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    /* border: 1px solid rgba(255, 255, 255, 0.3); Light border for better visibility */
     transition: all 0.3s ease-in-out; /* Smooth transitions */
   }
 
