@@ -94,12 +94,12 @@ main {
 
 .top-content {
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   align-self: flex-end;
-
+  margin-top: -30px;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
   color: #585858;
 }
 
@@ -358,7 +358,7 @@ table {
 
 th,
 td {
-  font-family: roboto;
+  font-family: "mulish";
   padding: 15px;
   text-align: left;
   border: 1px solid #eeeeee;
@@ -593,20 +593,61 @@ td {
   left: -20px;
 }
 
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+}
+.custom-select select {
+  display: none; /* Hide default select */
+}
+.select-selected {
+  padding: 16px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.select-items {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+.select-items div {
+  color: black;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+.select-items div:hover {
+  background-color: #f1f1f1;
+}
+.custom-select.active .select-items {
+  display: block;
+}
+.custom-select.active .select-selected:after {
+  content: "▲";
+}
+.select-selected:after {
+  content: "▼";
+
+  margin-left: 10px;
+}
+
 .hamburger {
   display: block;
-  position: fixed;
-  top: 20px;
-  left: 20px;
+  /* position: fixed; */
+  margin-top: 20px;
+  margin-left: 20px;
   cursor: pointer;
   z-index: 10000;
 }
-
-/* .hamburger .ham,
-.hamburger .canc {
-  width: 35px;
-  height: 5px;
-} */
 
 @media screen and (max-width: 1024px) {
   .requests {
@@ -627,11 +668,16 @@ td {
   }
 } */
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 768px) {
   .cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    width: 97%;
+  }
+
+  .activity-card {
+    width: 93%;
   }
 
   main {
@@ -639,7 +685,7 @@ td {
   }
   .hamburger {
     display: block;
-    position: fixed;
+    /* position: fixed; */
     top: 10px;
     left: 20px;
     cursor: pointer;
@@ -656,12 +702,23 @@ td {
     display: none;
   }
   .top-content {
-    position: fixed;
+    /* position: fixed; */
     border: none;
   }
 }
 
-@media screen and (max-width: 491px) {
+@media screen and (max-width: 430px) {
+  .cards {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 96%;
+  }
+
+  .activity-card {
+    width: 91%;
+  }
   header {
     display: flex;
     flex-direction: column;
@@ -709,9 +766,6 @@ td {
     align-items: center;
   }
 
-  .top-content {
-    border: none;
-  }
   .top-content select {
     margin-right: 0.5rem;
   }
@@ -723,9 +777,8 @@ td {
 
   .top-content {
     border: none;
-    position: fixed;
-    margin-top: 0.9rem;
-    margin-right: 0.1rem;
+    z-index: 1;
+    margin-top: -2.2rem;
   }
 
   .top-content img {
@@ -804,5 +857,25 @@ td {
 
   .trm {
     margin-right: 20px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: -20rem;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hamburger {
+    margin-left: -60px;
+    margin-top: 1.6em;
+  }
+
+  .welcome h1 {
+    font-size: 2em;
+  }
+  .welcome p {
+    fomt-size: 1em;
   }
 }

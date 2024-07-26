@@ -112,13 +112,22 @@
               <img src="images/Vector.png" class="notification" />
               <img src="images/group38.png" />
 
-              <select name="navigation" class="user" id="choose">
-                <option value="dashboard.html">Godwin</option>
-                <option value="details.html">Details</option>
-                <option value="report.html">Report</option>
-                <option value="createnewinspection.html">Sign-up</option>
-                <option value="index.html">Log-out</option>
-              </select>
+              <div class="custom-select">
+                <div class="select-selected">Godwin</div>
+                <div class="select-items">
+                  <div>Details</div>
+                  <div>Report</div>
+                  <div>Sign-up</div>
+                  <div>Log-out</div>
+                </div>
+                <select>
+                  <option value="Godwin">Godwin</option>
+                  <option value="Details">Details</option>
+                  <option value="Report">Report</option>
+                  <option value="Sign-up">Sign-up</option>
+                  <option value="Log-out">Log-out</option>
+                </select>
+              </div>
             </div>
           </div>
           <header>
@@ -305,7 +314,7 @@
           hamburger.classList.toggle("open");
           if (hamburger.classList.contains("open")) {
             cancel.style.display = "block";
-            cancel.style.marginLeft = "120px";
+            cancel.style.marginLeft = "10px";
             hamburger.style.display = "none";
             logoContainer.style.display = "block";
             main.style.marginLeft = "298px";
@@ -353,12 +362,37 @@
           content.classList.toggle("shifted");
         });
 
-      // Select navigation
+      // Custom select button
 
-      document.getElementById("choose").addEventListener("change", function () {
-        var selectedValue = this.value;
-        if (selectedValue) {
-          window.location.href = selectedValue;
+      document.addEventListener("DOMContentLoaded", function () {
+        var selected = document.querySelector(".select-selected");
+        var itemsContainer = document.querySelector(".select-items");
+
+        selected.addEventListener("click", function () {
+          itemsContainer.classList.toggle("show");
+          selected.classList.toggle("active");
+        });
+
+        var items = document.querySelectorAll(".select-items div");
+        items.forEach(function (item) {
+          item.addEventListener("click", function () {
+            selected.textContent = item.textContent;
+            var select = document.querySelector(".custom-select select");
+            select.value = item.textContent;
+            itemsContainer.classList.remove("show");
+            selected.classList.remove("active");
+          });
+        });
+      });
+
+      // Close the dropdown if the user clicks outside of it
+      document.addEventListener("click", function (event) {
+        var customSelect = document.querySelector(".custom-select");
+        if (!customSelect.contains(event.target)) {
+          var itemsContainer = document.querySelector(".select-items");
+          var selected = document.querySelector(".select-selected");
+          itemsContainer.classList.remove("show");
+          selected.classList.remove("active");
         }
       });
     </script>
