@@ -423,9 +423,9 @@ header p {
 /* Tab container style */
 
 .tabs-container {
-  /* margin-top: 40px; */
+  margin-top: 40px;
   background-color: #fffbf6;
-  width: 50%;
+  /* width: 50%; */
   border: 1px solid #d8d8d8;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -651,5 +651,12 @@ img#ham {
   .top-content img {
     width: 1rem;
     /* height: 0.4rem; */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .tabs-container {
+    margin-left: 50px;
+    width: 50%;
   }
 }

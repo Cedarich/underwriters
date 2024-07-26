@@ -15,6 +15,7 @@ body {
   min-height: 100vh;
   max-width: 100%;
   background-color: #fffbf6;
+  overflow-x: hidden;
 }
 .main-content {
   width: 100%;
@@ -308,8 +309,6 @@ a {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  /* margin-left: 30px; */
-  /* margin-bottom: 350px; */
 }
 
 .header-text {
@@ -317,8 +316,6 @@ a {
 }
 
 .wrapper {
-  /* margin-bottom: 200px; */
-  /* padding: 20px; */
   width: 100%;
 }
 
@@ -432,7 +429,7 @@ a {
 }
 
 .hamburger {
-  display: block;
+  display: none;
 
   top: 20px;
   left: 20px;

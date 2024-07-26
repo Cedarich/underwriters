@@ -24,14 +24,14 @@
           <h1>Underwriter Dashboard</h1>
           <p>Welcome, Login to your portal account.</p>
         </div>
-        <form aria-labelledby="loginForm" id="login-form">
+        <form id="loginForm" onsubmit="return validateForm();">
           <div class="form-group">
             <label for="loginId">Login ID</label>
             <div>
               <input
                 type="text"
                 name="loginId"
-                id="loginId"
+                id="login"
                 required
                 placeholder="Enter your login ID"
                 aria-required="true"
@@ -46,11 +46,11 @@
               <label for="password">Password</label>
               <button
                 type="button"
-                id="togglePassword"
+                id="Password"
                 class="show"
-                aria-label="Toggle password visibility"
+                onclick="togglePasswordVisibility()"
               >
-                Show
+                show
               </button>
             </div>
             <div>
@@ -74,12 +74,19 @@
                 type="checkbox"
                 class="promoted-input-checkbox"
               />
-
               <label for="keepLoggedIn"> Keep me logged in </label>
             </div>
             <button class="reset" type="button">Reset Password</button>
           </div>
-          <button id="myBtn" type="submit">Login</button>
+          <button
+            id="myBtn"
+            type="submit"
+            class="disabled-button"
+            onclick="validateForm()"
+            disabled
+          >
+            Login
+          </button>
         </form>
       </div>
       <div class="right">
@@ -87,7 +94,6 @@
           <img src="images/ques.svg" alt="help icon" />
           <button>help</button>
         </div>
-
         <div class="customer-mgt">
           <div class="group-img">
             <img src="images/group.png" alt="" />
@@ -103,9 +109,47 @@
       </div>
     </div>
     <script>
-      document.getElementById("myBtn").onclick = function () {
-        window.location.href = "dashboard.html";
-      };
+      function togglePasswordVisibility() {
+        const passwordInput = document.getElementById("password");
+        const showText = document.querySelector(".show");
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          showText.textContent = "hide";
+        } else {
+          passwordInput.type = "password";
+          showText.textContent = "show";
+        }
+      }
+
+      function validateForm() {
+        const loginInput = document.getElementById("login");
+        const passwordInput = document.getElementById("password");
+        if (loginInput.value === "admin" && passwordInput.value === "admin") {
+          alert("Login successful!");
+          window.location.href = "./dashboard.html";
+          return true;
+        } else {
+          alert("Invalid login or password.");
+          return false;
+        }
+      }
+
+      const loginInput = document.getElementById("login");
+      const passwordInput = document.getElementById("password");
+      const submitButton = document.getElementById("myBtn");
+
+      function checkInputs() {
+        if (loginInput.value === "admin" && passwordInput.value === "admin") {
+          submitButton.disabled = false;
+          submitButton.classList.remove("disabled-button");
+        } else {
+          submitButton.disabled = true;
+          submitButton.classList.add("disabled-button");
+        }
+      }
+
+      loginInput.addEventListener("input", checkInputs);
+      passwordInput.addEventListener("input", checkInputs);
     </script>
   </body>
 </html>

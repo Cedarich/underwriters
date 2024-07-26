@@ -15,6 +15,7 @@ body {
   min-height: 100vh;
   max-width: 100%;
   background-color: #fffbf6;
+  overflow-x: hidden;
 }
 main {
   width: 100%;
@@ -595,7 +596,7 @@ header .btn-new-inspection {
 }
 
 .hamburger {
-  display: block;
+  display: none;
 
   top: 20px;
   margin-left: 20px;

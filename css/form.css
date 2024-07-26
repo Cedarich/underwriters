@@ -94,7 +94,7 @@ main {
 
 .top-content {
   display: flex;
-  margin-top: -30px;
+  /* margin-top: -30px; */
   align-self: flex-end;
 
   align-items: center;
@@ -647,7 +647,7 @@ nav input {
 }
 
 .hamburger {
-  display: block;
+  display: none;
 
   top: 20px;
   margin-left: 20px;
@@ -673,6 +673,9 @@ img#ham {
 /* Media query for small screen */
 
 @media screen and (max-width: 888px) {
+  .form-container {
+    overflow-x: hidden;
+  }
   main {
     margin-left: 0;
   }
@@ -690,7 +693,7 @@ img#ham {
 
   .top-content {
     border: none;
-    margin-top: -25px;
+    margin-top: -15px;
   }
 }
 
