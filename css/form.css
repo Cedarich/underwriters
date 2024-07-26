@@ -94,7 +94,7 @@ main {
 
 .top-content {
   display: flex;
-  position: fixed;
+  margin-top: -30px;
   align-self: flex-end;
 
   align-items: center;
@@ -648,11 +648,14 @@ nav input {
 
 .hamburger {
   display: block;
-  position: fixed;
+
   top: 20px;
-  left: 20px;
+  margin-left: 20px;
   cursor: pointer;
   z-index: 1000;
+}
+img#ham {
+  width: 40px;
 }
 
 .alert-message {
@@ -675,7 +678,6 @@ nav input {
   }
   .hamburger {
     display: block;
-    position: fixed;
     top: 20px;
     left: 15px;
     cursor: pointer;
@@ -688,7 +690,7 @@ nav input {
 
   .top-content {
     border: none;
-    position: fixed;
+    margin-top: -25px;
   }
 }
 
@@ -709,8 +711,8 @@ nav input {
   }
   .top-content {
     border: none;
-    position: fixed;
-    margin-top: 0.9rem;
+
+    margin-top: -25px;
     margin-right: 0.1rem;
   }
 
@@ -769,4 +771,14 @@ nav input {
     overflow: hidden;
     text-align: center;
   }
+}
+
+@media screen and (max-width: 1024px) {
+  .top-content {
+    margin-top: -25px;
+  }
+
+  /* .hamburger {
+    margin-left: 20px;
+  } */
 }

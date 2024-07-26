@@ -596,11 +596,15 @@ header .btn-new-inspection {
 
 .hamburger {
   display: block;
-  position: fixed;
+
   top: 20px;
-  left: 20px;
+  margin-left: 20px;
   cursor: pointer;
   z-index: 1000;
+}
+
+img#ham {
+  width: 40px;
 }
 
 /* 
@@ -624,7 +628,7 @@ Media query for smaller screen */
   }
   .top-content {
     border: none;
-    position: fixed;
+    margin-top: 25px;
   }
 }
 
@@ -662,7 +666,7 @@ Media query for smaller screen */
   .top-content {
     border: none;
     position: fixed;
-    margin-top: 13px;
+    margin-top: 25px;
   }
 
   .top-content img {
@@ -675,5 +679,24 @@ Media query for smaller screen */
   .timeline-item button {
     font-size: 0.5rem;
     white-space: nowrap;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .timeline-item {
+    margin-left: 20px;
+  }
+
+  .timeline-item button {
+    margin-right: 98px;
+  }
+
+  .timeline-item .details {
+    font-size: 9px;
+    margin-left: 20px;
+  }
+
+  header p {
+    white-space: wrap;
   }
 }

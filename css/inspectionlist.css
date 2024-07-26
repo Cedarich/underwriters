@@ -95,7 +95,7 @@ main {
 
 .top-content {
   display: flex;
-  position: fixed;
+  margin-top: 25px;
   align-self: flex-end;
 
   align-items: center;
@@ -487,9 +487,13 @@ tr {
   display: block;
   position: fixed;
   top: 20px;
-  left: 20px;
+  margin-left: 20px;
   cursor: pointer;
   z-index: 1000;
+}
+
+img#ham {
+  width: 40px;
 }
 
 /* Media query for small-screen */
@@ -513,7 +517,6 @@ tr {
 
   .top-content {
     border: none;
-    position: fixed;
   }
 }
 @media screen and (max-width: 666px) {
@@ -564,7 +567,7 @@ tr {
   .top-content {
     border: none;
     position: fixed;
-    margin-top: 0.9rem;
+    margin-top: 25px;
     margin-right: 0.1rem;
   }
 

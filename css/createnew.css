@@ -433,11 +433,15 @@ a {
 
 .hamburger {
   display: block;
-  position: fixed;
+
   top: 20px;
   left: 20px;
   cursor: pointer;
   z-index: 1000;
+}
+
+img#ham {
+  width: 40px;
 }
 
 /* Media Query for smaller screen */
@@ -500,7 +504,7 @@ a {
 
   .top-content {
     border: none;
-    position: fixed;
+    margin-top: 25px;
   }
   .container {
     justify-content: right;
@@ -523,8 +527,8 @@ a {
 
   .top-content {
     border: none;
-    position: fixed;
-    margin-top: 0.9rem;
+
+    margin-top: 25px;
     margin-right: 0.1rem;
   }
 
@@ -577,4 +581,14 @@ a {
     width: 135px;
     height: 154px;
   } */
+}
+
+@media screen and (max-width: 320px) {
+  .selection {
+    margin-left: 40px;
+  }
+
+  .header-text {
+    margin-left: 10px;
+  }
 }

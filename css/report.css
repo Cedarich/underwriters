@@ -425,7 +425,7 @@ header p {
 .tabs-container {
   /* margin-top: 40px; */
   background-color: #fffbf6;
-
+  width: 50%;
   border: 1px solid #d8d8d8;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -580,11 +580,14 @@ header p {
 
 .hamburger {
   display: block;
-  position: fixed;
-  top: 20px;
-  left: 20px;
+
+  margin-left: 20px;
   cursor: pointer;
   z-index: 9999;
+}
+
+img#ham {
+  width: 40px;
 }
 
 /* Media querry for smaller screens */
@@ -596,7 +599,7 @@ header p {
   .hamburger {
     display: block;
     position: fixed;
-    top: 20px;
+    top: 10px;
     left: 15px;
     cursor: pointer;
     z-index: 1000;
@@ -609,6 +612,7 @@ header p {
   .top-content {
     border: none;
     position: fixed;
+    margin-top: 20px;
   }
 }
 
