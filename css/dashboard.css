@@ -695,7 +695,7 @@ img#ham {
     display: block;
     /* position: fixed; */
     top: 10px;
-    margin-left: 50px;
+    margin-left: 30px;
     cursor: pointer;
     z-index: 9999;
   }
