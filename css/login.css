@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
   }
 }
 
@@ -12,6 +13,7 @@ html {
 }
 
 body {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
   font-family: "Mulish", sans-serif;
   background-color: var(--bg-color);
   width: 100vw;
