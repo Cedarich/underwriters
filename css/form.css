@@ -147,7 +147,6 @@ header h1 {
   justify-content: space-between;
   align-items: center;
   margin: 0px 0px 20px 0px;
-  z-index: 999;
 }
 
 .close {
@@ -315,7 +314,6 @@ section {
 }
 .form-container {
   margin: 0 auto;
-  z-index: 999;
 
   background-color: #fffbf6;
 
@@ -685,7 +683,7 @@ img#ham {
     margin-top: 20px;
     margin-left: 20px;
     cursor: pointer;
-    z-index: 99999;
+    z-index: 999;
   }
   .sidebar,
   .logo-container {
@@ -777,9 +775,13 @@ img#ham {
   }
 }
 
-@media screen and (max-width: 1011px) {
+@media screen and (max-width: 1024px) {
   .form-container {
     overflow-x: auto;
+    z-index: 999;
+  }
+
+  .alert-message {
     z-index: 999;
   }
 
