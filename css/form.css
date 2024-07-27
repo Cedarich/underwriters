@@ -779,13 +779,4 @@ img#ham {
     overflow-x: hidden;
     z-index: 999;
   }
-
-  .alert-message {
-    z-index: 999;
-  }
-
-  .welcome {
-    /* margin-left: 90px; */
-    z-index: 999;
-  }
 }
