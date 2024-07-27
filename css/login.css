@@ -33,7 +33,6 @@ button {
 
 .left {
   width: 50%;
-  height: 100%;
   background-color: #fffbf6;
   background: linear-gradient(135deg, #fffbf6, #ffefd5);
   display: flex;
