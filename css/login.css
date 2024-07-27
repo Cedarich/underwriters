@@ -1,3 +1,8 @@
+:root {
+  background-color: #fffbf6;
+  background: linear-gradient(135deg, #fffbf6, #ffefd5);
+}
+
 * {
   ::after*,
   ::before {
@@ -363,7 +368,14 @@ input {
   .form-group label {
     font-size: 18px;
     width: 90%;
-    /* margin: auto; */
+    background-color: #fffbf6;
+    background: linear-gradient(135deg, #fffbf6, #ffefd5);
+  }
+
+  #password,
+  #login {
+    background-color: #fffbf6;
+    background: linear-gradient(135deg, #fffbf6, #ffefd5);
   }
 
   label {
