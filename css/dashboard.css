@@ -704,6 +704,10 @@ img#ham {
     align-items: left;
   }
 
+  .sidebar {
+    transition: all 0.3s ease-in-out;
+  }
+
   header .btn-new-inspection {
     cursor: pointer;
     display: inline-block;
@@ -831,6 +835,7 @@ img#ham {
 
   .hamburger {
     display: block;
+    height: fit-content;
     margin-left: -20rem;
     cursor: pointer;
   }

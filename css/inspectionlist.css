@@ -485,7 +485,7 @@ tr {
 
 .hamburger {
   display: none;
-  position: fixed;
+  height: fit-content;
   top: 20px;
   margin-left: 20px;
   cursor: pointer;

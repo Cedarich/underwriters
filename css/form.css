@@ -649,7 +649,7 @@ nav input {
 
 .hamburger {
   display: none;
-
+  height: fit-content;
   top: 20px;
   margin-left: 20px;
   cursor: pointer;
@@ -696,8 +696,7 @@ img#ham {
     border: none;
     margin-top: -25px;
   }
-
-  
+}
 
 @media screen and (max-width: 465px) {
   .close a {
