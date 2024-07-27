@@ -25,7 +25,7 @@
           <p>Welcome, Login to your portal account.</p>
         </div>
         <form id="loginForm" onsubmit="return validateForm();">
-          <!-- <div id="error-message" style="color: red; margin-top: 10px"></div> -->
+          <div id="error-message" style="color: red; margin-top: 10px"></div>
           <div class="form-group">
             <label for="loginId">Login ID</label>
             <div>
@@ -79,13 +79,7 @@
             </div>
             <button class="reset" type="button">Reset Password</button>
           </div>
-          <button
-            id="myBtn"
-            type="submit"
-            class="disabled-button"
-            onclick="validateForm()"
-            disabled
-          >
+          <button id="myBtn" type="submit" class="disabled-button" disabled>
             Login
           </button>
         </form>
@@ -118,21 +112,23 @@
           showText.textContent = "Hide";
         } else {
           passwordInput.type = "password";
-          showText.textContent = "show";
+          showText.textContent = "Show";
         }
       }
 
       function validateForm() {
         const loginInput = document.getElementById("login");
         const passwordInput = document.getElementById("password");
+        const errorMessage = document.getElementById("error-message");
         if (loginInput.value === "admin" && passwordInput.value === "admin") {
-          alert("Login successful!");
-          window.location.href = "./dashboard.html";
-          return true;
-        } else {
-          alert("Invalid login or password.");
+          errorMessage.textContent = "Wrong password.";
           return false;
         }
+
+        // Add your actual login validation logic here
+        alert("Login successful!");
+        window.location.href = "./dashboard.html";
+        return true;
       }
 
       const loginInput = document.getElementById("login");
@@ -140,7 +136,7 @@
       const submitButton = document.getElementById("myBtn");
 
       function checkInputs() {
-        if (loginInput.value === "admin" && passwordInput.value === "admin") {
+        if (loginInput.value && passwordInput.value) {
           submitButton.disabled = false;
           submitButton.classList.remove("disabled-button");
         } else {
