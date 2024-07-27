@@ -608,6 +608,23 @@ top-content select {
   outline: none;
 }
 
+.selection label {
+  display: block;
+  align-self: flex-start;
+  height: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #34475e;
+  line-height: 20.08px;
+}
+
+.user {
+  /* padding: 10px; */
+  background-color: transparent;
+}
+
 .hamburger {
   display: none;
   /* position: fixed; */

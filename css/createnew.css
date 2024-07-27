@@ -309,7 +309,7 @@ a {
 
 .welcome {
   display: flex;
-  /* border: 2px solid blue; */
+  flex-direction: column;
   width: 100%;
   justify-content: space-between;
   align-items: center;
@@ -372,6 +372,11 @@ a {
   font-size: 16px;
   color: #34475e;
   line-height: 20.08px;
+}
+
+.user {
+  padding: 10px;
+  background-color: transparent;
 }
 
 .dot {
@@ -437,7 +442,7 @@ a {
   height: fit-content;
 
   top: 20px;
-  left: 20px;
+  margin-left: 20px;
   cursor: pointer;
   z-index: 1000;
 }
