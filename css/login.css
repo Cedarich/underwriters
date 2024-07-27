@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
   }
 }
 
@@ -13,7 +12,6 @@ html {
 }
 
 body {
- 
   background-color: #fffbf6;
   font-family: "Mulish", sans-serif;
   width: 100vw;
@@ -243,9 +241,9 @@ input {
   width: 50%;
   height: 100%;
   position: relative;
-  
+
   background-image: url("../images/banner.png");
-  background: linear-gradient(135deg, #ff7e5f, #feb47b)
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -340,8 +338,7 @@ input {
     padding: 20px 0px;
     padding-inline: 10px;
     justify-content: center;
-    /* margin-top: 120px; */
-    /* margin-bottom: 2.5rem; */
+    overflow-y: hidden;
   }
 
   .reset {
