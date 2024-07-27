@@ -97,7 +97,7 @@ body {
 
 .top-content {
   display: flex;
-  position: fixed;
+  position: absolute;
   align-self: flex-end;
 
   align-items: center;

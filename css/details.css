@@ -95,7 +95,7 @@ main {
 
 .top-content {
   display: flex;
-  position: fixed;
+  position: absolute;
   align-self: flex-end;
   align-items: center;
   justify-content: center;
