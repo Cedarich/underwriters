@@ -627,9 +627,9 @@ top-content select {
 
 .hamburger {
   display: none;
-  /* position: fixed; */
+
   margin-top: 10px;
-  /* margin-left: 20px; */
+
   cursor: pointer;
   z-index: 10000;
 }
@@ -637,6 +637,10 @@ top-content select {
 img#ham {
   width: 40px;
 }
+
+/* .top-container img#canc {
+  width: 10px;
+} */
 
 @media screen and (max-width: 1024px) {
   .requests {
@@ -913,6 +917,6 @@ img#ham {
 
   .activity-card {
     width: 86%;
-    margin-left: 25px;
+    margin: 0 auto;
   }
 }
