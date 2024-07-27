@@ -116,6 +116,11 @@ form {
   background-color: #fffbf6;
   background: linear-gradient(135deg, #fffbf6, #ffefd5);
 }
+
+.form-group input:focus {
+  background-color: #fffbf6;
+}
+
 .form-group div input::placeholder {
   color: #afb0b1;
   font-family: inherit;
