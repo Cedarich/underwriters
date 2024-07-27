@@ -147,6 +147,7 @@ header h1 {
   justify-content: space-between;
   align-items: center;
   margin: 0px 0px 20px 0px;
+  z-index: 999;
 }
 
 .close {
@@ -314,11 +315,10 @@ section {
 }
 .form-container {
   margin: 0 auto;
-  /* padding: 20px; */
+  z-index: 999;
 
   background-color: #fffbf6;
 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   border: none;
   overflow-y: auto;
@@ -777,13 +777,14 @@ img#ham {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1011px) {
   .form-container {
-    margin-left: 90px;
-    overflow-x: hidden;
+    overflow-x: auto;
+    z-index: 999;
   }
 
   .welcome {
-    margin-left: 90px;
+    /* margin-left: 90px; */
+    z-index: 999;
   }
 }
