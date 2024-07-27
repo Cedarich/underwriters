@@ -332,7 +332,6 @@ input {
   }
 
   .left {
-    height: 100%;
     padding: 20px 0px;
     padding-inline: 10px;
     justify-content: center;
