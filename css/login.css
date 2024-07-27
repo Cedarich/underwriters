@@ -102,7 +102,10 @@ form {
   align-items: center;
   margin-top: 10px;
   align-items: center;
+  background-color: #fffbf6;
+  background: linear-gradient(135deg, #fffbf6, #ffefd5);
 }
+
 .form-group div input {
   width: 100%;
   padding: 1rem;
