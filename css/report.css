@@ -88,7 +88,7 @@ body {
 
 .top-content {
   display: flex;
-
+  position: absolute;
   align-self: flex-end;
 
   align-items: center;
@@ -473,6 +473,8 @@ main {
   line-height: 22.82px;
   font-size: 14px;
   color: #585858;
+  max-width: 240px;
+  text-align: left;
 }
 
 .content.active {
@@ -610,7 +612,7 @@ img#ham {
   .top-content {
     border: none;
 
-    margin-top: -28px;
+    margin-top: 10px;
   }
 }
 
