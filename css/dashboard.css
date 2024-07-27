@@ -709,6 +709,7 @@ img#ham {
     align-items: center;
     padding: 10px;
     width: 87%;
+    margin-right: 20px;
   }
 
   .activity-card {
@@ -882,7 +883,7 @@ img#ham {
 
   .cards {
     width: 87%;
-    margin-left: 2em;
+    margin-left: 1em;
   }
 
   .welcome {
