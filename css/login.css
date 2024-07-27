@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    
   }
 }
 
@@ -13,9 +13,9 @@ html {
 }
 
 body {
-  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+ 
+  background-color: #fffbf6;
   font-family: "Mulish", sans-serif;
-  background-color: var(--bg-color);
   width: 100vw;
   height: 100vh;
 }
@@ -88,7 +88,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
+  padding: 0.2rem;
   background-color: #fffbf6;
   background: linear-gradient(135deg, #fffbf6, #ffefd5);
 }
