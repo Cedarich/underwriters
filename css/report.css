@@ -428,7 +428,7 @@ main {
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
-  z-index: 999;
+
   /* height: 477px; */
 }
 
@@ -653,14 +653,6 @@ img#ham {
 }
 
 @media screen and (max-width: 1080px) {
-  .tabs-container {
-    z-index: 999;
-  }
-
-  .policy-card {
-    z-index: 999;
-  }
-
   .hamburger {
     display: block;
   }
