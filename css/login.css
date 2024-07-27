@@ -27,7 +27,7 @@ button {
 .container {
   width: 100%;
   height: 100vh;
-  overflow-y: hidden;
+
   display: flex;
 }
 
@@ -324,8 +324,6 @@ input {
   .container {
     box-sizing: border-box;
     padding: 10px;
-
-    overflow: hidden;
   }
 
   .logo-container img {
