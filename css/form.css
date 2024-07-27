@@ -224,6 +224,7 @@ header .btn-new-inspection {
   display: flex;
   width: 166px;
   height: 52px;
+  margin-top: 10px;
 }
 
 .trm {
@@ -681,8 +682,8 @@ img#ham {
   }
   .hamburger {
     display: block;
-    top: 20px;
-    left: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
     cursor: pointer;
     z-index: 99999;
   }
@@ -693,9 +694,10 @@ img#ham {
 
   .top-content {
     border: none;
-    margin-top: -15px;
+    margin-top: -25px;
   }
-}
+
+  
 
 @media screen and (max-width: 465px) {
   .close a {
@@ -777,11 +779,12 @@ img#ham {
 }
 
 @media screen and (max-width: 1024px) {
-  .top-content {
-    margin-top: -25px;
+  .form-container {
+    margin-left: 90px;
+    overflow-x: hidden;
   }
 
-  /* .hamburger {
-    margin-left: 20px;
-  } */
+  .welcome {
+    margin-left: 90px;
+  }
 }

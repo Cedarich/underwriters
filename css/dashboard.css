@@ -852,3 +852,27 @@ img#ham {
     fomt-size: 0.5rem;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .requests {
+    overflow-x: hidden;
+  }
+
+  .cards {
+    width: 85%;
+    margin-left: 2em;
+  }
+
+  .welcome {
+    margin-left: 50px;
+  }
+
+  #myBtn {
+    margin-right: 30px;
+  }
+
+  .activity-card {
+    width: 85%;
+    margin-left: 20px;
+  }
+}

@@ -186,6 +186,7 @@ header p {
   display: flex;
   width: 166px;
   height: 52px;
+  margin-top: 10px;
 }
 
 .trm {

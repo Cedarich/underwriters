@@ -579,7 +579,7 @@ header p {
 }
 
 .hamburger {
-  display: block;
+  display: none;
 
   margin-left: 20px;
   cursor: pointer;
@@ -598,7 +598,7 @@ img#ham {
   }
   .hamburger {
     display: block;
-    position: fixed;
+
     top: 10px;
     left: 15px;
     cursor: pointer;
@@ -657,6 +657,5 @@ img#ham {
 @media screen and (max-width: 1024px) {
   .tabs-container {
     margin-left: 50px;
-    width: 50%;
   }
 }
