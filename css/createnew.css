@@ -21,7 +21,7 @@ body {
 .main-content {
   width: 100%;
   height: 100%;
-  margin-left: 78px;
+  /* margin-left: 78px; */
 }
 
 /* container fixed 1440 X 1240 */
@@ -99,7 +99,7 @@ body {
   display: flex;
   position: absolute;
   align-self: flex-end;
-
+  margin-top: 10px;
   align-items: center;
   justify-content: center;
   gap: 5px;
@@ -368,6 +368,7 @@ a {
   height: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  margin-left: 32px;
   white-space: nowrap;
   font-size: 16px;
   color: #34475e;
@@ -393,7 +394,7 @@ a {
 }
 
 #dropdown {
-  width: 100%;
+  width: 90%;
   height: 47px;
   margin: 0 auto;
   border-radius: 5px;
@@ -453,7 +454,7 @@ img#ham {
 
 /* Media Query for smaller screen */
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 998px) {
   main {
     margin-left: 0;
   }
@@ -515,7 +516,7 @@ img#ham {
 
   .top-content {
     border: none;
-    margin-top: 25px;
+    margin-top: 20px;
   }
   .container {
     justify-content: right;

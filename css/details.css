@@ -101,6 +101,7 @@ main {
   justify-content: center;
   gap: 5px;
   color: #585858;
+  margin-top: 10px;
 }
 
 .top-content select {

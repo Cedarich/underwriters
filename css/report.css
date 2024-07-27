@@ -90,7 +90,7 @@ body {
   display: flex;
   position: absolute;
   align-self: flex-end;
-
+  margin-top: 10px;
   align-items: center;
   justify-content: center;
   gap: 5px;
