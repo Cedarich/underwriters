@@ -477,6 +477,10 @@ img#ham {
     margin: auto -20px;
   }
 
+  .sidebar {
+    transition: all 0.3s ease-in-out;
+  }
+
   .inspection-options {
     display: flex;
     gap: 10px;
@@ -514,6 +518,18 @@ img#ham {
 
   .x {
     color: #ff9500;
+  }
+
+  #sidebarParent.hidden {
+    transform: translateX(-100%);
+  }
+
+  #main {
+    transition: margin-left 0.3s ease;
+  }
+
+  #main .shifted {
+    margin-left: 0;
   }
 }
 
@@ -553,6 +569,18 @@ img#ham {
 
   .container {
     justify-content: right;
+  }
+
+  #sidebarParent.hidden {
+    transform: translateX(-100%);
+  }
+
+  #main {
+    transition: margin-left 0.3s ease;
+  }
+
+  #main .shifted {
+    margin-left: 0;
   }
 }
 

@@ -26,7 +26,6 @@ button {
 
 .container {
   width: 100%;
-  max-width: 144rem;
   height: 100vh;
   overflow-y: hidden;
   display: flex;
@@ -39,7 +38,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-inline: 8rem;
+  padding-inline: 5rem;
   padding-top: 2rem;
   justify-content: center;
 }
@@ -224,7 +223,7 @@ input {
   background-color: #ff7a00;
   font-size: 2.4rem;
   font-family: inherit;
-  margin-top: 1rem;
+  margin-top: 3rem;
   border: none;
   color: #fff;
   padding-block: 2rem;

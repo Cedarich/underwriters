@@ -700,4 +700,8 @@ Media query for smaller screen */
   header p {
     white-space: wrap;
   }
+
+  .sidebar {
+    transition: all 0.3s ease-in-out;
+  }
 }
