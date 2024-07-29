@@ -411,6 +411,7 @@ a {
 }
 
 .create-request {
+  width: 216px;
   height: 45px;
   border-radius: 5.21px;
   padding: 10px;
