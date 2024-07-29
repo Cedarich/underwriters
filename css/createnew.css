@@ -308,8 +308,6 @@ a {
   margin-bottom: 30px;
 }
 
-
-
 .welcome {
   display: flex;
   flex-direction: column-reverse;
@@ -528,22 +526,17 @@ img#ham {
   .x {
     color: #ff9500;
   }
+}
+#sidebarParent.hidden {
+  transform: translateX(-100%);
+}
 
- 
+#main {
+  transition: margin-left 0.3s ease;
+}
 
- 
-  }
-  #sidebarParent.hidden {
-    transform: translateX(-100%);
-  }
-
-  #main {
-    transition: margin-left 0.3s ease;
-  }
-
-  #main .shifted {
-    margin-left: 0;
-  }
+#main .shifted {
+  margin-left: 0;
 }
 
 @media screen and (max-width: 425px) {
