@@ -23,6 +23,19 @@ body {
   height: 100vh;
 }
 
+#error-message {
+  /* border: solid red 1px; */
+  height: 40px;
+  width: 760px;
+  margin-left: calc((100% - 760px) / 2);
+  font-family: "Mulish";
+  font-size: 18px;
+  color: red;
+  text-align: center;
+  padding: 15px;
+  display: none;
+}
+
 button {
   cursor: pointer;
   border: none;

@@ -418,7 +418,8 @@ a {
   color: #ffff;
   background-color: #c3c4c6;
   border: none;
-  /* margin-left: 480px; */
+  align-items: center;
+  justify-content: center;
   line-height: 17.57px;
   margin-top: 1.3rem;
   cursor: not-allowed;
