@@ -149,6 +149,10 @@ header h1 {
   margin: 0px 0px 20px 0px;
 }
 
+.welcome p {
+  margin-right: 20px;
+}
+
 .close {
   display: flex;
   justify-content: center;
