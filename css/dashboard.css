@@ -904,7 +904,7 @@ img#ham {
 
   .cards {
     width: 87%;
-    margin-left: 1em;
+    margin: 0 auto;
   }
 
   .welcome {
