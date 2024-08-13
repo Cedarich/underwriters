@@ -21,6 +21,7 @@ body {
   font-family: "Mulish", sans-serif;
   width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 #error-message {
@@ -367,6 +368,7 @@ input {
   margin-right: 20px;
 }
 /* MEDIA QUERY */
+
 @media screen and (max-width: 767px) {
   .container {
     box-sizing: border-box;
